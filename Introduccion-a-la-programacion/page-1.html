@@ -1,0 +1,178 @@
+<html lang="en"><head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1,
+            shrink-to-fit=no">
+        <head>
+            <style> 
+            * { 
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+
+                display: grid;
+                width: 100%;
+                height: 250px;
+                grid-template-areas: "head"
+                                     "main"
+                                     "foot";
+              }
+              
+            body > header {
+                grid-area: head;
+              }
+            header img {
+                height:100%;
+            }
+            body > main {
+                grid-area: main;
+              }
+            body > main{
+                margin-bottom: auto;
+            }
+            main .row:after{
+                display: table;
+                clear:both;
+            }
+            main .column{
+                float: left;
+                width: 50%;
+            }
+              
+            body > footer {
+                grid-area: foot;
+              }
+            main .content{
+                padding: 20px;
+                margin-left: 10px;
+            }
+            h2{
+                color: black
+            }
+            p{
+                color: rgb(82, 81, 81);
+            }
+            footer {
+                position: fixed;
+                height: 50px;
+                background-color: rgb(0, 217, 255);
+                bottom: 0px;
+                left: 0px;
+                right: 0px;
+            }
+            a {
+                text-decoration: none;
+                display: inline-block;
+                padding: 8px 16px;
+              }
+              
+              a:hover {
+                background-color: #ddd;
+                color: black;
+              }
+              
+              .previous {
+                background-color: #f1f1f1;
+                color: black;
+              }
+              
+              .next {
+                background-color: #04AA6D;
+                color: white;
+              }
+              
+              .round {
+                border-radius: 50%;
+              }
+        </style>
+        </head>
+        <body>
+            <header>
+                <div style="text-align:center;">
+                    <!-- <img src="logo.jpg" alt="image description"> -->
+                    <img src="/content/enforced/52087-PGC08/Introduccion-a-la-programacion/logo.jpg">
+                </div>
+                <div style="background-color: rgba(26, 1, 253, 0.829);
+                    height:10px">
+                </div>
+            </header>
+            <main>
+                <div class="row">
+                    <div class="column">
+                        <div class="content">
+                            <h2>Lenguajes naturales frente a lenguajes de
+                                programación</h2><br>
+                            <p>Un lenguaje es un medio (y una herramienta) para
+                                expresar y registrar pensamientos.
+                                Hay muchos lenguajes a nuestro alrededor.
+                                Algunos de ellos no requieren hablar ni
+                                escribir,
+                                como el lenguaje corporal. Es posible expresar
+                                tus sentimientos más profundos de manera muy
+                                precisa sin decir una sola palabra.
+
+                            </p><br>
+                            <p>Otro lenguaje que empleas cada día es tu lengua
+                                materna, que utilizas para manifestar tu
+                                voluntad y para pensar en la realidad. Las
+                                computadoras también tienen su propio lenguaje,
+                                llamado <b>lenguaje máquina</b>, el cual es muy
+                                rudimentario.
+                            </p><br>
+                            <p>Una computadora, incluso la más técnicamente
+                                sofisticada, carece incluso de un rastro de
+                                inteligencia. Se podría decir que es como un
+                                perro bien entrenado, responde solo a un
+                                conjunto predeterminado de comandos conocidos.
+                            </p><br>
+                            <p>Los comandos que reconoce son muy simples.
+                                Podemos imaginar que la computadora responde
+                                a órdenes como "Toma este número, divídelo entre
+                                otro y guarda el resultado".
+                            </p><br>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <p>Un conjunto completo de comandos conocidos se
+                                llama <b>lista de instrucciones</b>, a
+                                veces abreviada IL (por sus siglas en inglés).
+                                Los diferentes tipos de computadoras
+                                pueden variar según el tamaño de sus IL y las
+                                instrucciones pueden ser completamente
+                                diferentes en diferentes modelos.
+
+                            </p><br>
+                            <p>Nota: los lenguajes máquina son desarrollados por
+                                humanos.
+                            </p><br>
+                            <p>Ninguna computadora es actualmente capaz de crear
+                                un nuevo idioma.
+                                Sin embargo, eso puede cambiar pronto. Por otro
+                                lado, las personas
+                                también usan varios idiomas muy diferentes, pero
+                                estos idiomas se
+                                crearon ellos mismos. Además, todavía están
+                                evolucionando.
+                            </p><br>
+                            <p>Cada día se crean nuevas palabras y desaparecen
+                                las viejas.
+                                Estos lenguajes se llaman <b>lenguajes naturales</b>.
+                            </p><br>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <div style="text-align:center">
+                    <a href="page-0.html" class="previous round">&#8249;</a>
+                    <a href="page-2.html" class="next round">&#8250;</a>
+                    <a href="page-0.html" class="contents" style="float:right">Contenidos &raquo;</a>
+                </div>
+            </footer>
+
+        </body>
+
+    </html>

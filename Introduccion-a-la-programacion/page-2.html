@@ -1,0 +1,196 @@
+<html lang="en"><head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1,
+            shrink-to-fit=no">
+        <head>
+            <style> 
+            * { 
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+
+                display: grid;
+                width: 100%;
+                height: 250px;
+                grid-template-areas: "head"
+                                     "main"
+                                     "foot";
+              }
+              
+            body > header {
+                grid-area: head;
+              }
+            header img {
+                height:100%;
+            }
+            body > main {
+                grid-area: main;
+              }
+            main .row:after{
+                display: table;
+                clear:both;
+            }
+            main .column{
+                float: left;
+                width: 50%;
+            }
+              
+            body > footer {
+                grid-area: foot;
+              }
+            main .content{
+                padding: 20px;
+                margin-left: 10px;
+            }
+            h2{
+                color: black
+            }
+            *{
+                color: rgb(82, 81, 81);
+            }
+            footer {
+                position: fixed;
+                height: 50px;
+                background-color: rgb(0, 217, 255);
+                bottom: 0px;
+                left: 0px;
+                right: 0px;
+            }
+            a {
+                text-decoration: none;
+                display: inline-block;
+                padding: 8px 16px;
+              }
+              
+              a:hover {
+                background-color: #ddd;
+                color: black;
+              }
+              
+              .previous {
+                background-color: #f1f1f1;
+                color: black;
+              }
+              
+              .next {
+                background-color: #04AA6D;
+                color: white;
+              }
+              
+              .round {
+                border-radius: 50%;
+              }
+        </style>
+        </head>
+        <body>
+            <header>
+                <div style="text-align:center;">
+                    <!-- <img src="logo.jpg" alt="image description"> -->
+                    <img src="/content/enforced/52087-PGC08/Introduccion-a-la-programacion/logo.jpg">
+                </div>
+                <div style="background-color: rgba(26, 1, 253, 0.829);
+                    height:10px">
+                </div>
+            </header>
+            <main>
+                <div class="row">
+                    <div class="column">
+                        <div class="content">
+                            <h2>¿Qué compone a un lenguaje?</h2><br>
+                            <p>Podemos decir que cada lenguaje (máquina o
+                                natural, no importa) consta de los siguientes
+                                elementos:
+                            </p><br>
+                            <ul>
+                                <li>Un <b>alfabeto</b>: un conjunto de símbolos
+                                    utilizados para formar palabras de un
+                                    determinado
+                                    lenguaje (por ejemplo, el alfabeto latino
+                                    para el inglés, el alfabeto cirílico para el
+                                    ruso, el kanji para el japonés, y así
+                                    sucesivamente).</li><br>
+                                <li>Un <b>léxico</b>: (también conocido como
+                                    diccionario) un conjunto de palabras que el
+                                    lenguaje
+                                    ofrece a sus usuarios (por ejemplo, la
+                                    palabra "computadora" proviene del
+                                    diccionario
+                                    en inglés, mientras que "cmoptrue" no; la
+                                    palabra "chat" está presente en los
+                                    diccionarios de inglés y francés, pero sus
+                                    significados son diferentes.</li><br>
+                                <li>Una <b>sintaxis</b>: un conjunto de reglas
+                                    (formales o informales, escritas o
+                                    interpretadas intuitivamente) utilizadas
+                                    para precisar si una determinada cadena de
+                                    palabras forma una oración válida (por
+                                    ejemplo, "Soy una serpiente" es una frase
+                                    sintácticamente correcta, mientras que "Yo
+                                    serpiente soy una" no lo es).</li><br>
+                                <li>Una <b>semántica</b>: un conjunto de reglas
+                                    que
+                                    determinan si una frase tiene sentido (por
+                                    ejemplo, "Me comí una dona" tiene sentido,
+                                    pero "Una dona me comió" no lo tiene).</li><br>
+                            </ul>
+                            <p>La IL es, de hecho, <b>el alfabeto de un lenguaje
+                                    máquina</b>. Este es el conjunto de símbolos
+                                más
+                                simple y principal que podemos usar para dar
+                                comandos a una computadora. Es la lengua materna
+                                de la computadora.
+
+                                .
+                            </p><br>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <p>Desafortunadamente, esta lengua está muy lejos de
+                                ser una lengua materna humana. Ambos (tanto las
+                                computadoras como los humanos) necesitamos algo
+                                más, un lenguaje común para las computadoras y
+                                los seres humanos, o un puente entre los dos
+                                mundos diferentes.
+                            </p><br>
+                            <p>Necesitamos un lenguaje en el que los humanos
+                                puedan escribir sus programas y un lenguaje que
+                                las computadoras puedan usar para ejecutar los
+                                programas, que es mucho más complejo que el
+                                lenguaje máquina y más sencillo que el lenguaje
+                                natural.
+                            </p><br>
+                            <p>Tales lenguajes son a menudo llamados lenguajes
+                                de programación de alto nivel. Son algo
+                                similares a los naturales en que usan símbolos,
+                                palabras y convenciones legibles para los
+                                humanos. Estos lenguajes permiten a los humanos
+                                expresar comandos a las computadoras que son
+                                mucho más complejos que las instrucciones
+                                ofrecidas por las IL.
+                            </p><br>
+                            <p>Un programa escrito en un lenguaje de
+                                programación de alto nivel se <b>llama código
+                                fuente</b> (en contraste con el código de máquina
+                                ejecutado por las computadoras). Del mismo modo,
+                                el archivo que contiene el código fuente se
+                                llama <b>archivo fuente</b>.
+                            </p><br>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <div style="text-align:center">
+                    <a href="page-1.html" class="previous round">&#8249;</a>
+                    <a href="page-3.html" class="next round">&#8250;</a>
+                    <a href="page-0.html" class="contents" style="float:right">Contenidos &raquo;</a>
+                </div>
+            </footer>
+
+        </body>
+
+    </html>
