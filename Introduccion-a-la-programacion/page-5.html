@@ -1,241 +1,179 @@
-<html lang="en"><head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1,
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,
             shrink-to-fit=no">
-        <head>
-            <style> 
-* { 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body {
 
-    display: grid;
-    width: 100%;
-    height: 250px;
-    grid-template-areas: "head"
-                         "main"
-                         "foot";
-  }
-  
-body > header {
-    grid-area: head;
-  }
-header img {
-    height:100%;
-}
-body > main {
-    grid-area: main;
-  }
-  
-body > footer {
-    grid-area: foot;
-  }
-main .content{
-    padding: 20px;
-    margin-left: 10px;
-}
-h2,h3{
-    color: black
-}
-*{
-    color: rgb(82, 81, 81);
-}
-table { 
-    width: 90vw; 
-    border : 1px solid gray; 
-    border-spacing: 2px;
-} 
-td { 
-    border : 1px solid gray; 
-    background-color: rgb(213,230,245);
-    padding: 10px;
-} 
-footer {
-    position: fixed;
-    height: 50px;
-    background-color: rgb(0, 217, 255);
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-}
-a {
-    text-decoration: none;
-    display: inline-block;
-    padding: 8px 16px;
-  }
-  
-  a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  .previous {
-    background-color: #f1f1f1;
-    color: black;
-  }
-  
-  .next {
-    background-color: #04AA6D;
-    color: white;
-  }
-  
-  .round {
-    border-radius: 50%;
-  }
-</style>
-        </head>
-        <body>
-            <header>
-                <div style="text-align:center;">
-                    <!-- <img src="logo.jpg" alt="image description"> -->
-                    <img src="/content/enforced/52087-PGC08/Introduccion-a-la-programacion/logo.jpg">
-                </div>
-                <div style="background-color: rgba(26, 1, 253, 0.829);
-                    height:10px">
-                </div>
-            </header>
-            <main>
-                <div class="row">
-                    <div class="column">
-                        <div class="content">
-                            <h2 style="text-align:center;">La compilación frente
-                                a la interpretación - ventajas y desventajas</h2><br>
-                            <h3 style="text-align:center;">Ventajas</h3>
-                            <table class="default">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <style>
+            .borderless a {
+                border: none;
+            }
 
-                                <tr>
-                                    <th>Compilación</th>
+            .active a {
+                background-color: #74ADF7 !important;
+                border-color: #74ADF7 !important;
+            }
+        </style>
+    </head>
 
-                                    <th>Interpretación</th>
-
-                                </tr>
-
-                                <tr>
-
-                                    <td>
-
-                                        <p>La ejecución del código
-                                            traducido suele ser más rápida.
-                                        </p><br>
-                                        <p>Solo el programador debe tener
-                                            el compilador; el usuario final
-                                            puede usar el código sin él.
-                                        </p><br>
-                                        <p>El código traducido se almacena
-                                            en lenguaje máquina, ya que es
-                                            muy difícil de entender, es
-                                            probable que tus propios
-                                            inventos y trucos de
-                                            programación sigan siendo un
-                                            secreto.
-                                        </p><br>
-
-                                    </td>
-
-                                    <td>
-
-                                        <p>Puedes ejecutar el código en
-                                            cuanto lo completes; no hay
-                                            fases adicionales de traducción.
-                                        </p><br>
-                                        <p>El código se almacena utilizando
-                                            el lenguaje de programación, no
-                                            el de la máquina; esto significa
-                                            que puede ejecutarse en
-                                            computadoras que utilizan
-                                            diferentes lenguajes máquina; no
-                                            se compila el código por
-                                            separado para cada arquitectura
-                                            diferente.
-                                        </p><br>
-
-                                    </td>
-
-                                </tr>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-light bg-transparent">
+            <div class="container-fluid">
+                <a class="mx-auto" href="page-0.html">
+                    <img src="logo.jpg" class="img-fluid" alt="python_logo">
+                </a>
+            </div>
+        </nav>
+        <div class="progress  mt-2" style="height: 1px; background-color: #74ADF7;">
+            <div class="progress-bar bg-primary" role="progressbar" style="width: 85%;" aria-valuenow="0"
+                aria-valuemin="85" aria-valuemax="100"></div>
+        </div>
+        <div class="progress  mt-2" style="height: 15px; background-color: #74ADF7;">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar"
+                style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="content card my-4 bg-body">
+            <div class="card-body">
+                <h1 class="card-title">La compilación frente
+                    a la interpretación - ventajas y desventajas</h1>
+                <div class="content">
+                    <h2 class="text-center mt-4">Ventajas</h2>
+                        <div class="table-responsive my-4 px-5">
+                            <table class="table align-middle">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center" scope="col">Compilación</th>
+                                        <th class="text-center" scope="col">Interpretación</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="align-top">
+                                        <td>
+                                            <p>La ejecución del código
+                                                traducido suele ser más rápida.
+                                            </p><br>
+                                            <p>Solo el programador debe tener
+                                                el compilador; el usuario final
+                                                puede usar el código sin él.
+                                            </p><br>
+                                            <p>El código traducido se almacena
+                                                en lenguaje máquina, ya que es
+                                                muy difícil de entender, es
+                                                probable que tus propios
+                                                inventos y trucos de
+                                                programación sigan siendo un
+                                                secreto.
+                                            </p><br>
+                                        </td>
+                                        <td>
+                                            <p>Puedes ejecutar el código en
+                                                cuanto lo completes; no hay
+                                                fases adicionales de traducción.
+                                            </p><br>
+                                            <p>El código se almacena utilizando
+                                                el lenguaje de programación, no
+                                                el de la máquina; esto significa
+                                                que puede ejecutarse en
+                                                computadoras que utilizan
+                                                diferentes lenguajes máquina; no
+                                                se compila el código por
+                                                separado para cada arquitectura
+                                                diferente.
+                                            </p><br>
+                                        </td>
+                                    </tr>
+                                </tbody>
                             </table>
-                            <h3 style="text-align:center;">Desventajas</h3>
-                            <table class="default">
-
-                                <tr>
-                                    <th>Compilación</th>
-
-                                    <th>Interpretación</th>
-
-                                </tr>
-
-                                <tr>
-
-                                    <td>
-
-                                        <p>La compilación en sí misma puede
-                                            llevar mucho tiempo; es posible
-                                            que no puedas ejecutar tu código
-                                            inmediatamente después de
-                                            cualquier modificación.
-
-                                        </p><br>
-                                        <p>Tienes que tener tantos
-                                            compiladores como plataformas de
-                                            hardware en las que deseas que
-                                            se ejecute tu código.
-
-                                        </p><br>
-
-                                    </td>
-
-                                    <td>
-
-                                        <p>No esperes que la interpretación
-                                            incremente tu código a alta
-                                            velocidad: tu código compartirá
-                                            la potencia de la computadora
-                                            con el intérprete, por lo que no
-                                            puede ser realmente rápido.
-                                        </p><br>
-                                        <p>Tanto tú como el usuario final
-                                            deben tener el intérprete para
-                                            ejecutar el código.
-
-                                        </p><br>
-                                    </td>
-                                </tr>
-                            </table>
-                            <h3>¿Qué significa todo esto para ti?
-
-                            </h3>
-                            <ul>
-                                <li>
-                                    Python es un lenguaje interpretado. Esto
-                                    significa que hereda todas las ventajas y
-                                    desventajas descritas. Por supuesto, agrega
-                                    algunas de sus características únicas a
-                                    ambos conjuntos.
-
-                                </li>
-                                <li>
-                                    Si deseas programar en Python, necesitarás
-                                    el intérprete de Python. No podrás ejecutar
-                                    tu código sin él. Afortunadamente, Python es
-                                    gratis. Esta es una de sus ventajas más
-                                    importantes.
-
-                                </li>
-                            </ul>
                         </div>
+                    <h2 class="text-center mt-4">Desventajas</h2>
+                        <div class="table-responsive my-4 px-5">
+                            <table class="table align-middle">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center" scope="col">Compilación</th>
+                                        <th class="text-center" scope="col">Interpretación</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="align-top">
+                                        <td>
+                                            <p>La compilación en sí misma puede
+                                                llevar mucho tiempo; es posible
+                                                que no puedas ejecutar tu código
+                                                inmediatamente después de
+                                                cualquier modificación.
+
+                                            </p><br>
+                                            <p>Tienes que tener tantos
+                                                compiladores como plataformas de
+                                                hardware en las que deseas que
+                                                se ejecute tu código.
+
+                                            </p><br>
+                                        </td>
+                                        <td>
+                                            <p>No esperes que la interpretación
+                                                incremente tu código a alta
+                                                velocidad: tu código compartirá
+                                                la potencia de la computadora
+                                                con el intérprete, por lo que no
+                                                puede ser realmente rápido.
+                                            </p><br>
+                                            <p>Tanto tú como el usuario final
+                                                deben tener el intérprete para
+                                                ejecutar el código.
+                                            </p><br>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    <h2 class="text-center my-4">¿Qué significa todo esto para ti?</h2>
+                    <div class="list-group px-5 mb-5">
+                        <li class="list-group-item">
+                            Python es un lenguaje interpretado. Esto
+                            significa que hereda todas las ventajas y
+                            desventajas descritas. Por supuesto, agrega
+                            algunas de sus características únicas a
+                            ambos conjuntos.
+                        </li>
+                        <li class="list-group-item">
+                            Si deseas programar en Python, necesitarás
+                            el intérprete de Python. No podrás ejecutar
+                            tu código sin él. Afortunadamente, Python es
+                            gratis. Esta es una de sus ventajas más
+                            importantes.
+                        </li>
                     </div>
                 </div>
-            </main>
-            <footer>
-                <div style="text-align:center">
-                    <a href="page-4.html" class="previous round">&#8249;</a>
-                    <a href="page-6.html" class="next round">&#8250;</a>
-                    <a href="page-0.html" class="contents" style="float:right">Contenidos &raquo;</a>
-                </div>
-            </footer>
+                <nav class="mx-auto" aria-label="Page navigation">
+                    <ul class="pagination mb-0 justify-content-center">
+                        <li class="page-item"><a class="page-link" href="page-0.html">Inicio</a></li>
+                        <li class="page-item"><a class="page-link" href="page-1.html">1</a></li>
+                        <li class="page-item"><a class="page-link" href="page-2.html">2</a></li>
+                        <li class="page-item"><a class="page-link" href="page-3.html">3</a></li>
+                        <li class="page-item"><a class="page-link" href="page-4.html">4</a></li>
+                        <li class="page-item active"><a class="page-link" href="page-5.html">5</a></li>
+                        <li class="page-item"><a class="page-link" href="page-6.html">6</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="page-6.html" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
 
-        </body>
-
-    </html>
+</html>
