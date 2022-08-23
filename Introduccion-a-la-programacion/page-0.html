@@ -1,120 +1,96 @@
-<html lang="en"><head>
+<html lang="en">
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1,
         shrink-to-fit=no">
-    <head>
-        <style> 
-        * { 
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            display: grid;
-            width: 100%;
-            grid-template-areas: "head"
-                                 "main"
-                                 "foot";
-          }
-          
-        body > header {
-            grid-area: head;
-          }
-        header img {
-            height:100%;
-        }
-        body > main {
-            grid-area: main;
-          }
-        body > footer {
-            grid-area: foot;
-          }
-        main .content{
-            padding: 20px;
-            margin-left: 10px;
-        }
-        h2{
-            color: black
-        }
-        p{
-            color: rgb(82, 81, 81);
-        }
-        footer {
-            position: fixed;
-            height: 50px;
-            background-color: rgb(0, 217, 255);
-            bottom: 0px;
-            left: 0px;
-            right: 0px;
-        }
-        a {
-            text-decoration: none;
-            display: inline-block;
-            padding: 8px 16px;
-          }
-          
-          a:hover {
-            background-color: #ddd;
-            color: black;
-          }
-          
-          .previous {
-            background-color: #f1f1f1;
-            color: black;
-          }
-          
-          .next {
-            background-color: #04AA6D;
-            color: white;
-          }
-          
-          .round {
-            border-radius: 50%;
-          }
-    </style>
-    </head>
-    <body>
-        <header>
-            <div style="text-align:center;">
-                <!-- <img src="logo.jpg" alt="image description"> -->
-                <img src="/content/enforced/52087-PGC08/Introduccion-a-la-programacion/logo.jpg">
-            </div>
-            <div style="background-color: rgba(26, 1, 253, 0.829);
-                height:10px">
-            </div>
-        </header>
-        <main>
-            <div class="content">
-                <h2>Tabla de Contenidos</h2>
-                <ul>
-                    <li>
-                        <a href="page-1.html">Lenguajes naturales vs lenguajes de programación</a>
-                    </li>
-                    <li>
-                        <a href="page-2.html">¿Qué compone a un lenguaje?</a>
-                    </li>
-                    <li>
-                        <a href="page-3.html">La compilación frente a la interpretación</a>
-                    </li>
-                    <li>
-                        <a href="page-4.html">¿Qué hace realmente el intérprete?</a>
-                    </li>
-                    <li>
-                        <a href="page-5.html">La compilación frente a la interpretación - ventajas y desventajas</a>
-                    </li>
-                    <li>
-                        <a href="page-6.html">Sobre Python</a>
-                    </li>
-                </ul>
-            </div>
-        </main>
-        <footer>
-            <div style="text-align:center">
-                <a href="page-1.html" class="next round">&#8250;</a>
-            </div>
-        </footer>
 
-    </body>
+    <head>
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> -->
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet"
+            href="/shared/HTML-Template-Library/HTML-Templates-V3/pages/../_assets/thirdpartylib/bootstrap-4.3.1/css/bootstrap.min.css">
+        <!-- Font Awesome CSS -->
+        <link rel="stylesheet"
+            href="/shared/HTML-Template-Library/HTML-Templates-V3/pages/../_assets/thirdpartylib/fontawesome-free-5.9.0-web/css/all.min.css">
+        <style>
+            .borderless a {
+                border: none;
+            }
+
+            .active a {
+                background-color: #74ADF7 !important;
+                border-color: #74ADF7 !important;
+            }
+        </style>
+    </head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-light bg-transparent">
+            <div class="container-fluid">
+                <a class="mx-auto" href="page-0.html">
+                    <img src="logo.jpg" class="img-fluid" alt="python_logo">
+                </a>
+            </div>
+        </nav>
+        <div class="progress  mt-2" style="height: 1px; background-color: #74ADF7;">
+            <div class="progress-bar bg-primary" role="progressbar" style="width: 0%;" aria-valuenow="0"
+                aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="progress  mt-2" style="height: 15px; background-color: #74ADF7;">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar"
+                style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="content card my-4 bg-body">
+            <div class="card-body">
+                <h1 class="card-title">Tabla de Contenidos</h1>
+                <ol class="list-group list-group-flush list-group-numbered borderless">
+                    <a class="list-group-item list-group-item-action list-group-light my-3" href="page-1.html">Lenguajes
+                        naturales vs lenguajes de programación</a>
+                    <a class="list-group-item list-group-item-action list-group-light mb-3" href="page-2.html">¿Qué
+                        compone a un lenguaje?</a>
+                    <a class="list-group-item list-group-item-action list-group-light mb-3" href="page-3.html">La
+                        compilación frente a la interpretación</a>
+                    <a class="list-group-item list-group-item-action list-group-light mb-3" href="page-4.html">¿Qué hace
+                        realmente el intérprete?</a>
+                    <a class="list-group-item list-group-item-action list-group-light mb-3" href="page-5.html">La
+                        compilación frente a la interpretación - ventajas y
+                        desventajas</a>
+                    <a class="list-group-item list-group-item-action list-group-light mb-5" href="page-6.html">Sobre
+                        Python</a>
+                </ol>
+                <nav class="mx-auto" aria-label="Page navigation">
+                    <ul class="pagination mb-0 justify-content-center">
+                        <li class="page-item active"><a class="page-link" href="page-0.html">Inicio</a></li>
+                        <li class="page-item"><a class="page-link" href="page-1.html">1</a></li>
+                        <li class="page-item"><a class="page-link" href="page-2.html">2</a></li>
+                        <li class="page-item"><a class="page-link" href="page-3.html">3</a></li>
+                        <li class="page-item"><a class="page-link" href="page-4.html">4</a></li>
+                        <li class="page-item"><a class="page-link" href="page-5.html">5</a></li>
+                        <li class="page-item"><a class="page-link" href="page-6.html">6</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="page-1.html" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script> -->
+    <script
+        src="/shared/HTML-Template-Library/HTML-Templates-V3/pages/../_assets/thirdpartylib/jquery/jquery-3.3.1.slim.min.js"></script>
+    <script
+        src="/shared/HTML-Template-Library/HTML-Templates-V3/pages/../_assets/thirdpartylib/popper-js/popper.min.js"></script>
+    <script
+        src="/shared/HTML-Template-Library/HTML-Templates-V3/pages/../_assets/thirdpartylib/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+
+</body>
 
 </html>
