@@ -1,0 +1,248 @@
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+            shrink-to-fit=no">
+
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet"
+            href="/shared/HTML-Template-Library/HTML-Templates-V3/pages/../_assets/thirdpartylib/bootstrap-4.3.1/css/bootstrap.min.css">
+        <!-- Font Awesome CSS -->
+        <link rel="stylesheet"
+            href="/shared/HTML-Template-Library/HTML-Templates-V3/pages/../_assets/thirdpartylib/fontawesome-free-5.9.0-web/css/all.min.css">
+        <style>
+            .borderless a {
+                border: none;
+            }
+
+            .active a {
+                background-color: #74ADF7 !important;
+                border-color: #74ADF7 !important;
+            }
+        </style>
+    </head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-light bg-transparent">
+            <div class="container-fluid">
+                <a class="mx-auto" href="page-0.html">
+                    <img src="/content/enforced/52087-PGC08/Introduccion-a-la-programacion/logo.jpg" class="img-fluid"
+                        alt="python_logo">
+                </a>
+            </div>
+        </nav>
+        <div class="progress mt-2" style="height: 1px; background-color:
+                    #74ADF7;">
+            <div class="progress-bar bg-primary" role="progressbar" style="width: 20%;" aria-valuenow="0"
+                aria-valuemin="20" aria-valuemax="100"></div>
+        </div>
+        <div class="progress mt-2" style="height: 15px;
+                    background-color: #74ADF7;">
+            <div class="progress-bar progress-bar-striped
+                        progress-bar-animated bg-primary" role="progressbar" style="width: 20%;" aria-valuenow="20"
+                aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="content card my-4 bg-body">
+            <div class="card-body">
+                <h1 class="card-title">Comparando en Python</code>
+                </h1>
+                <div class="row my-3">
+                    <div class="col-sm-6 my-3">
+                        <div class="content">
+                            <h2>Los operadores de comparación</h2>
+                            <p> También denominados operadores relacionales) se
+                                utilizan para comparar valores. La siguiente
+                                tabla ilustra cómo funcionan los operadores
+                                de comparación, asumiendo que <code>x=0, y=1</code>
+                                y
+                                <code>z=0</code>:
+
+                            </p>
+                            <div class="table-responsive my-4 px-4">
+                                <table class="table align-middle">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center" scope="col">Operador</th>
+                                            <th class="text-center" scope="col">Descripción</th>
+                                            <th class="text-center" scope="col">Ejemplo</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="align-top">
+                                            <td>
+                                                <code>==</code>
+                                            </td>
+                                            <td>
+                                                <p>Devuelve si los valores
+                                                    de los operandos son
+                                                    iguales, y False de lo
+                                                    contrario.
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <code>x == y # False</code><br>
+                                                <code>x == z # True</code>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <code>!=</code>
+                                            </td>
+                                            <td>
+                                                <p>Devuelve True si los
+                                                    valores de los operandos
+                                                    no son iguales, y False
+                                                    de lo contrario.
+
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <code>x != y # True</code><br>
+                                                <code>x != z # False</code>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <code>></code>
+                                            </td>
+                                            <td>
+                                                <p>Devuelve True si el valor
+                                                    del operando izquierdo
+                                                    es mayor que el valor
+                                                    del operando derecho, y
+                                                    False de lo contrario.
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <code>x > y # False</code><br>
+                                                <code>y > z # True</code>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <code><</code>
+                                            </td>
+                                            <td>
+                                                <p>Devuelve True si el
+                                                    valor del operando
+                                                    izquierdo es menor
+                                                    que el valor del
+                                                    operando derecho, y
+                                                    False de lo
+                                                    contrario.
+
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <code>x < y  # True</code><br>
+                                                <code>y < z  # False </code>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <code>&geq;</code>
+                                            </td>
+                                            <td>
+                                                <p>Devuelve True si el valor del operando izquierdo es mayor o igual al
+                                                    valor del operando derecho, y False de lo
+                                                    contrario.
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <code>x >= y  # False</code><br>
+                                                <code>x >= z  # True </code>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <code>&leq;</code>
+                                            </td>
+                                            <td>
+                                                <p>Devuelve True si el valor del operando izquierdo es menor o igual al
+                                                    valor del operando derecho, y False de lo contrario.
+
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <code>x <= y  # True</code><br>
+                                                <code>x <= z  # True</code>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 my-3">
+                        <div class="content">
+                            <h2>Las sentencias <code>if,elif,else</code></h2>
+                            <p>La estructura <code>if / elif / else</code> es una forma común de controlar el flujo de
+                                un programa,
+                                lo que te permite ejecutar bloques de código específicos según el valor de algunos datos
+                            </p>
+                            <p>La sentencia <code>if</code> puede entenderse como "Si la expresión evaluada, resulta ser
+                                verdadera, entonces ejecuta una vez el código en la expresión". Pueden haber más de un
+                                bloque <code>if</code> en un script, los cuales evaluaran situaciones diferentes.
+
+                            </p>
+                            <p>La sentencia <code>elif</code> se usa para cubrir nuevos casos dentro de un flujo
+                                <code>if</code>. Esta sentencia no es obligatoria y su
+                                uso depende de la situación
+                            </p>
+                            <p>La sentencia <code>else</code> cubre los casos no espeficados en
+                                sentencias <code>if</code> o <code>elif</code>. Esta sentencia no es obligatoria y su
+                                uso depende de la situación.</p>
+                            <pre class="mx-auto">
+                                    if the_weather_is_good:
+                                        go_for_a_walk()
+                                    elif tickets_are_available:
+                                        go_to_the_theater()
+                                    elif table_is_available:
+                                        go_for_lunch()
+                                    else:
+                                        play_chess_at_home()
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+                <nav class="mx-auto" aria-label="Page navigation">
+                    <ul class="pagination mb-0 justify-content-center">
+                        <li class="page-item"><a class="page-link" href="page-0.html">Inicio</a></li>
+                        <li class="page-item active"><a class="page-link" href="page-1.html">1</a></li>
+                        <li class="page-item"><a class="page-link" href="page-2.html">2</a></li>
+                        <li class="page-item"><a class="page-link" href="page-3.html">3</a></li>
+                        <li class="page-item"><a class="page-link" href="page-4.html">4</a></li>
+                        <li class="page-item"><a class="page-link" href="page-5.html">5</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="page-2.html" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script> -->
+    <script
+        src="/shared/HTML-Template-Library/HTML-Templates-V3/pages/../_assets/thirdpartylib/jquery/jquery-3.3.1.slim.min.js"></script>
+    <script
+        src="/shared/HTML-Template-Library/HTML-Templates-V3/pages/../_assets/thirdpartylib/popper-js/popper.min.js"></script>
+    <script
+        src="/shared/HTML-Template-Library/HTML-Templates-V3/pages/../_assets/thirdpartylib/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
