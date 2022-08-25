@@ -51,73 +51,78 @@
                     background-color: #74ADF7;">
                     <div class="progress-bar progress-bar-striped
                         progress-bar-animated bg-primary" role="progressbar"
-                        style="width: 80%;" aria-valuenow="80" aria-valuemin="0"
+                        style="width: 100%;" aria-valuenow="100" aria-valuemin="0"
                         aria-valuemax="100"></div>
                 </div>
                 <div class="content card my-4 bg-body">
                     <div class="card-body">
-                        <h1 class="card-title">Variables
-
+                        <h1 class="card-title">La función <code>input()</code>
                         </h1>
                         <div class="row my-3">
                             <div class="col-sm-6 my-3">
                                 <div class="content">
-                                    <p> Una variable es una ubicación nombrada
-                                        reservada para almacenar valores en la
-                                        memoria. Una variable es creada o
-                                        inicializada automáticamente cuando se
-                                        le asigna un valor por primera vez.
-                                        (2.1.4.1)
+                                    <p>La función <code>input()</code> permite
+                                        obtener datos desde la consola, los
+                                        cuales son ingresados por el usuario.
+                                        Estos datos son guardados con tipo
+                                        <code>string</code>
+                                    </p><br>
+                                    <p><b>Ejemplo:</b></p>
+                                    <code>
+                                        name = input("Ingresa tu nombre: ")<br>
+                                        print("Hola, " + name + ". ¡Un gusto
+                                        conocerte!")
+                                    </code><br>
+                                    <br>
+                                    <h2 class="mx-auto">Conversión de datos
+                                        (casting)
+                                    </h2>
+                                    <p>Dado que la función <code>input()</code>
+                                        nos guarda datos de tipo <code>string</code>,
+                                        esto puede generarnos problemas si lo
+                                        que deseamos es operar con un numero
+                                        ingresado por el usuario. Python ofrece
+                                        dos
+                                        simples funciones para
+                                        especificar un tipo de dato y resolver
+                                        este problema, aquí están: <code>int()</code>
+                                        y
+                                        <code>float()</code>.
 
                                     </p><br>
-                                    <p>Cada variable debe de tener un nombre
-                                        único - un identificador. Un nombre
-                                        válido debe ser aquel que no contiene
-                                        espacios, debe comenzar con un guion
-                                        bajo <code>(_)</code>, o una letra, y no
-                                        puede ser
-                                        una palabra reservada de Python. El
-                                        primer carácter puede estar seguido de
-                                        guiones bajos, letras, y dígitos. Las
-                                        variables en Python son sensibles a
-                                        mayúsculas y minúsculas. (2.1.4.1)
-
-                                    </p><br>
-                                    <p>Python es un lenguaje de tipo
-                                        dinámico, lo que significa que no se
-                                        necesita declarar variables en él.
-                                        (2.1.4.3) Para asignar valores a las
-                                        variables, se utiliza simplemente el
-                                        operador de asignación, es decir el
-                                        signo de igual (=) por ejemplo, <code>var = 1</code>.
+                                    <p>Sus nombres indican cual es su función:
                                     </p>
+                                    <ul>
+                                        <li>La función <code>int()</code> toma
+                                            un argumento
+                                            (por ejemplo, una cadena:
+                                            <code>int(string)</code>) e intenta
+                                            convertirlo a
+                                            un valor entero; si llegase a
+                                            fallar, el programa entero fallará
+                                            también.
+                                        </li><br>
+                                        <li>
+                                            La función <code>float()</code> toma
+                                            un argumento
+                                            (por ejemplo, una cadena:
+                                            <code>float(string)</code>) e
+                                            intenta convertirlo
+                                            a flotante.
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                             <div class="col-sm-6 my-3">
                                 <div class="content">
-                                    <h2 class="text-center mt-4">A tener en
-                                        cuenta</h2>
-                                    <p>Las siguientes palabras son sumamente
-                                        importantes para Python</p>
-                                    <code>['False', 'None', 'True', 'and', 'as',
-                                        'assert', 'break', 'class', 'continue',
-                                        'def', 'del', 'elif', 'else', 'except',
-                                        'finally', 'for', 'from', 'global',
-                                        'if', 'import', 'in', 'is', 'lambda',
-                                        'nonlocal', 'not', 'or', 'pass',
-                                        'raise', 'return', 'try', 'while',
-                                        'with', 'yield']</code><br>
-                                        <br>
-                                    <p>Son llamadas palabras clave o (mejor
-                                        dicho) palabras reservadas. Son
-                                        reservadas porque no se deben utilizar
-                                        como nombres: ni para variables, ni para
-                                        funciones, ni para cualquier otra cosa
-                                        que se desee crear. El significado de la
-                                        palabra reservada está predefinido, y no
-                                        debe cambiar.
-
-
+                                    <p>Cuando la función <code>input()</code> es llamada o
+                                        invocada, el flujo del programa se
+                                        detiene, el símbolo del cursor se
+                                        mantiene parpadeando (le está indicando
+                                        al usuario que tome acción ya que la
+                                        consola está en modo de entrada) hasta
+                                        que el usuario haya ingresado un dato
+                                        y/o haya presionado la tecla Enter.
 
                                     </p>
                                 </div>
@@ -136,13 +141,13 @@
                                 <li class="page-item"><a
                                         class="page-link"
                                         href="page-3.html">3</a></li>
-                                <li class="page-item active"><a
+                                <li class="page-item"><a
                                         class="page-link"
                                         href="page-4.html">4</a></li>
-                                <li class="page-item"><a class="page-link"
+                                <li class="page-item active"><a class="page-link"
                                         href="page-5.html">5</a></li>
                                 <li class="page-item">
-                                    <a class="page-link" href="page-5.html"
+                                    <a class="page-link" href="#"
                                         aria-label="Next">
                                         <span aria-hidden="true">&raquo;</span>
                                     </a>
