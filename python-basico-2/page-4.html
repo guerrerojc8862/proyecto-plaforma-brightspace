@@ -1,24 +1,21 @@
 <html lang="en">
 
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1,
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,
             shrink-to-fit=no">
 
-        <head>
-            <link
-                href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-                rel="stylesheet"
-                integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
-                crossorigin="anonymous">
-            <!-- Bootstrap CSS -->
-            <link rel="stylesheet"
-                href="/shared/HTML-Template-Library/HTML-Templates-V3/pages/../_assets/thirdpartylib/bootstrap-4.3.1/css/bootstrap.min.css">
-            <!-- Font Awesome CSS -->
-            <link rel="stylesheet"
-                href="/shared/HTML-Template-Library/HTML-Templates-V3/pages/../_assets/thirdpartylib/fontawesome-free-5.9.0-web/css/all.min.css">
-            <style>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet"
+            href="/shared/HTML-Template-Library/HTML-Templates-V3/pages/../_assets/thirdpartylib/bootstrap-4.3.1/css/bootstrap.min.css">
+        <!-- Font Awesome CSS -->
+        <link rel="stylesheet"
+            href="/shared/HTML-Template-Library/HTML-Templates-V3/pages/../_assets/thirdpartylib/fontawesome-free-5.9.0-web/css/all.min.css">
+        <style>
             .borderless a {
                 border: none;
             }
@@ -28,139 +25,198 @@
                 border-color: #74ADF7 !important;
             }
         </style>
-        </head>
+    </head>
 
-        <body>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-light bg-transparent">
             <div class="container-fluid">
-                <nav class="navbar navbar-light bg-transparent">
-                    <div class="container-fluid">
-                        <a class="mx-auto" href="page-0.html">
-                            <img
-                                src="/content/enforced/52087-PGC08/Introduccion-a-la-programacion/logo.jpg"
-                                class="img-fluid" alt="python_logo">
-                        </a>
-                    </div>
-                </nav>
-                <div class="progress mt-2" style="height: 1px; background-color:
+                <a class="mx-auto" href="page-0.html">
+                    <img src="/content/enforced/52087-PGC08/Introduccion-a-la-programacion/logo.jpg" class="img-fluid"
+                        alt="python_logo">
+                </a>
+            </div>
+        </nav>
+        <div class="progress mt-2" style="height: 1px; background-color:
                     #74ADF7;">
-                    <div class="progress-bar bg-primary" role="progressbar"
-                        style="width: 20%;" aria-valuenow="0"
-                        aria-valuemin="20" aria-valuemax="100"></div>
-                </div>
-                <div class="progress mt-2" style="height: 15px;
+            <div class="progress-bar bg-primary" role="progressbar" style="width: 20%;" aria-valuenow="0"
+                aria-valuemin="25" aria-valuemax="100"></div>
+        </div>
+        <div class="progress mt-2" style="height: 15px;
                     background-color: #74ADF7;">
-                    <div class="progress-bar progress-bar-striped
-                        progress-bar-animated bg-primary" role="progressbar"
-                        style="width: 80%;" aria-valuenow="80" aria-valuemin="0"
-                        aria-valuemax="100"></div>
-                </div>
-                <div class="content card my-4 bg-body">
-                    <div class="card-body">
-                        <h1 class="card-title">Variables
+            <div class="progress-bar progress-bar-striped
+                        progress-bar-animated bg-primary" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                aria-valuemin="25" aria-valuemax="100"></div>
+        </div>
+        <div class="content card my-4 bg-body">
+            <div class="card-body">
+                <h1 class="card-title">Listas o arreglos
 
-                        </h1>
-                        <div class="row my-3">
-                            <div class="col-sm-6 my-3">
-                                <div class="content">
-                                    <p> Una variable es una ubicación nombrada
-                                        reservada para almacenar valores en la
-                                        memoria. Una variable es creada o
-                                        inicializada automáticamente cuando se
-                                        le asigna un valor por primera vez.
-                                        (2.1.4.1)
+                </h1>
+                <div class="row my-3">
+                    <div class="col-sm-6 my-3">
+                        <div class="content">
+                            <p> La lista es un tipo de dato en Python que se utiliza para almacenar múltiples objetos.
+                                Es una colección ordenada y mutable de elementos separados por comas entre corchetes,
+                                por ejemplo:
+                            </p>
+                            <pre>
+                                <code class="language-python">my_list = [1, None, True, "Soy una cadena", 256, 0]</code>
+                            </pre><br>
+                            <h2 class="mx-auto">
+                                Operaciones en listas
+                            </h2><br>
+                            <ul>
+                                <li>Las listas se pueden indexar y actualizar , por ejemplo:
+                                    <pre>
+                                        my_list = [1, None, True, 'Soy una cadena', 256, 0]
+                                        print(my_list[3])  # salida: Soy una cadena
+                                        print(my_list[-1])  # salida: 0
 
-                                    </p><br>
-                                    <p>Cada variable debe de tener un nombre
-                                        único - un identificador. Un nombre
-                                        válido debe ser aquel que no contiene
-                                        espacios, debe comenzar con un guion
-                                        bajo <code class="language-python">(_)</code>, o una letra, y no
-                                        puede ser
-                                        una palabra reservada de Python. El
-                                        primer carácter puede estar seguido de
-                                        guiones bajos, letras, y dígitos. Las
-                                        variables en Python son sensibles a
-                                        mayúsculas y minúsculas. (2.1.4.1)
+                                        my_list[1] = '?'
+                                        print(my_list)  # salida: [1, '?', True, 'Soy una cadena', 256, 0]
 
-                                    </p><br>
-                                    <p>Python es un lenguaje de tipo
-                                        dinámico, lo que significa que no se
-                                        necesita declarar variables en él.
-                                        (2.1.4.3) Para asignar valores a las
-                                        variables, se utiliza simplemente el
-                                        operador de asignación, es decir el
-                                        signo de igual (=) por ejemplo, <code class="language-python">var = 1</code>.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 my-3">
-                                <div class="content">
-                                    <h2 class="text-center mt-4">A tener en
-                                        cuenta</h2>
-                                    <p>Las siguientes palabras son sumamente
-                                        importantes para Python</p>
-                                    <code class="language-python">['False', 'None', 'True', 'and', 'as',
-                                        'assert', 'break', 'class', 'continue',
-                                        'def', 'del', 'elif', 'else', 'except',
-                                        'finally', 'for', 'from', 'global',
-                                        'if', 'import', 'in', 'is', 'lambda',
-                                        'nonlocal', 'not', 'or', 'pass',
-                                        'raise', 'return', 'try', 'while',
-                                        'with', 'yield']</code><br>
-                                        <br>
-                                    <p>Son llamadas palabras clave o (mejor
-                                        dicho) palabras reservadas. Son
-                                        reservadas porque no se deben utilizar
-                                        como nombres: ni para variables, ni para
-                                        funciones, ni para cualquier otra cosa
-                                        que se desee crear. El significado de la
-                                        palabra reservada está predefinido, y no
-                                        debe cambiar.
+                                        my_list.insert(0, "primero")
+                                        my_list.append("último")
+                                        print(my_list)  # outputs: ['primero', 1, '?', True, 'Soy una cadena', 256, 0, 'último']
+                                    </pre>
 
+                                </li>
 
+                                <li>
+                                    Las listas pueden estar anidadas, por ejemplo:
+                                    <pre>
+                                        my_list = [1, 'a', ["lista", 64, [0, 1], False]]
+                                    </pre>
+                                </li>
 
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <nav class="mx-auto" aria-label="Page navigation">
-                            <ul class="pagination mb-0
-                                justify-content-center">
-                                <li class="page-item"><a class="page-link"
-                                        href="page-0.html">Inicio</a></li>
-                                <li class="page-item"><a
-                                        class="page-link"
-                                        href="page-1.html">1</a></li>
-                                <li class="page-item"><a class="page-link"
-                                        href="page-2.html">2</a></li>
-                                <li class="page-item"><a
-                                        class="page-link"
-                                        href="page-3.html">3</a></li>
-                                <li class="page-item active"><a
-                                        class="page-link"
-                                        href="page-4.html">4</a></li>
-                                <li class="page-item"><a class="page-link"
-                                        href="page-5.html">5</a></li>
-                                <li class="page-item">
-                                    <a class="page-link" href="page-5.html"
-                                        aria-label="Next">
-                                        <span aria-hidden="true">&raquo;</span>
-                                    </a>
+                                <li>
+                                    Los elementos de la lista y las listas se pueden eliminar, por ejemplo:
+                                    <pre>
+                                        my_list = [1, 2, 3, 4]
+                                        del my_list[2]
+                                        print(my_list)  # salida: [1, 2, 4]
+
+                                        del my_list  # borra la lista entera
+                                    </pre>
+                                </li>
+                                <li>
+                                    Puedes probar si algunos elementos existen en una lista o no utilizando las palabras
+                                    clave <code>in</code> y <code>not in</code>, por ejemplo:
+                                    <pre>
+                                        my_list = ["A", "B", 1, 2]
+
+                                        print("A" in my_list)  # salida: True
+                                        print("C" not in my_list)  # salida: True
+                                        print(2 not in my_list)  # salida: False
+
+                                    </pre>
                                 </li>
                             </ul>
-                        </nav>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 my-3">
+                        <div class="content">
+                            <ul>
+                                <li>
+                                    Las listas pueden ser iteradas mediante el uso del bucle <code
+                                        class="language-python">for</code>, por ejemplo:
+                                    <pre>
+                                        my_list = ["blanco", "purpura", "azul", "amarillo", "verde"]
+
+                                        for color in my_list:
+                                            print(color)
+                                    </pre>
+                                </li>
+
+                                <li>
+                                    La función <code class="language-python">len()</code> se puede usar para verificar
+                                    la longitud de la lista, por ejemplo:
+                                    <pre>
+                                        my_list = ["blanco", "purpura", "azul", "amarillo", "verde"]
+
+                                        print(len(my_list))  # salida 5
+
+                                        del my_list[2]
+                                        print(len(my_list))  # salida 4
+                                    </pre>
+                                </li>
+
+                                <li>
+                                    Si tienes una lista <code>list_1</code>, y la siguiente asignación:
+                                    <code>list_2 = list_1</code> esto no hace
+                                    una copia de la lista <code>list_1</code>, pero hace que las variables
+                                    <code>list_1</code> y <code>list_2</code> apunten a
+                                    la misma lista en la memoria. Por ejemplo:
+                                    <pre>
+                                        vehicles_one = ['carro', 'bicicleta', 'motor']
+
+                                        print(vehicles_one) # salida: [carro', 'bicicleta', 'motor']
+
+                                        vehicles_two = vehicles_one
+                                        del vehicles_one[0] # elimina 'carro'
+                                        print(vehicles_two) # salida: ['bicicleta', 'motor']
+
+
+                                    </pre>
+                                </li>
+
+                                <li>
+                                    Si deseas copiar una lista o parte de la lista, puedes hacerlo haciendo uso de
+                                    <code>slices</code>:
+                                    <pre>
+                                        colors = ['rojo', 'verde', 'naranja']
+
+                                        copy_whole_colors = colors[:]  # copia la lista entera
+                                        copy_part_colors = colors[0:2]  # copia parte de la lista
+                                    </pre>
+                                </li>
+
+                                <li>
+                                    Los parámetros start y end son opcionales al partir en rebanadas una lista:
+                                    <code>list[start:end]</code>, por ejemplo:
+                                    <pre>
+                                        my_list = [1, 2, 3, 4, 5]
+
+                                        slice_one = my_list[2: ]
+                                        slice_two = my_list[ :2]
+                                        slice_three = my_list[-2: ]
+
+                                        print(slice_one)  # salida: [3, 4, 5]
+                                        print(slice_two)  # salida: [1, 2]
+                                        print(slice_three)  # salida: [4, 5]
+                                    </pre>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+                <nav class="mx-auto" aria-label="Page navigation">
+                    <ul class="pagination mb-0
+                                justify-content-center">
+                        <li class="page-item"><a class="page-link" href="page-0.html">Inicio</a></li>
+                        <li class="page-item"><a class="page-link" href="page-1.html">1</a></li>
+                        <li class="page-item"><a class="page-link" href="page-2.html">2</a></li>
+                        <li class="page-item"><a class="page-link" href="page-3.html">3</a></li>
+                        <li class="page-item active"><a class="page-link" href="page-4.html">4</a></li>
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        </div>
+    </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script> -->
-            <script
-                src="/shared/HTML-Template-Library/HTML-Templates-V3/pages/../_assets/thirdpartylib/jquery/jquery-3.3.1.slim.min.js"></script>
-            <script
-                src="/shared/HTML-Template-Library/HTML-Templates-V3/pages/../_assets/thirdpartylib/popper-js/popper.min.js"></script>
-            <script
-                src="/shared/HTML-Template-Library/HTML-Templates-V3/pages/../_assets/thirdpartylib/bootstrap-4.3.1/js/bootstrap.min.js"></script>
-        </body>
+    <script
+        src="/shared/HTML-Template-Library/HTML-Templates-V3/pages/../_assets/thirdpartylib/jquery/jquery-3.3.1.slim.min.js"></script>
+    <script
+        src="/shared/HTML-Template-Library/HTML-Templates-V3/pages/../_assets/thirdpartylib/popper-js/popper.min.js"></script>
+    <script
+        src="/shared/HTML-Template-Library/HTML-Templates-V3/pages/../_assets/thirdpartylib/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+</body>
 
-    </html>
+</html>
