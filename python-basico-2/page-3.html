@@ -1,0 +1,206 @@
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+            shrink-to-fit=no">
+
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet"
+            href="/shared/HTML-Template-Library/HTML-Templates-V3/pages/../_assets/thirdpartylib/bootstrap-4.3.1/css/bootstrap.min.css">
+        <!-- Font Awesome CSS -->
+        <link rel="stylesheet"
+            href="/shared/HTML-Template-Library/HTML-Templates-V3/pages/../_assets/thirdpartylib/fontawesome-free-5.9.0-web/css/all.min.css">
+        <style>
+            .borderless a {
+                border: none;
+            }
+
+            .active a {
+                background-color: #74ADF7 !important;
+                border-color: #74ADF7 !important;
+            }
+        </style>
+    </head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-light bg-transparent">
+            <div class="container-fluid">
+                <a class="mx-auto" href="page-0.html">
+                    <img src="/content/enforced/52087-PGC08/Introduccion-a-la-programacion/logo.jpg" class="img-fluid"
+                        alt="python_logo">
+                </a>
+            </div>
+        </nav>
+        <div class="progress mt-2" style="height: 1px; background-color:
+                    #74ADF7;">
+            <div class="progress-bar bg-primary" role="progressbar" style="width: 20%;" aria-valuenow="0"
+                aria-valuemin="20" aria-valuemax="100"></div>
+        </div>
+        <div class="progress mt-2" style="height: 15px;
+                    background-color: #74ADF7;">
+            <div class="progress-bar progress-bar-striped
+                        progress-bar-animated bg-primary" role="progressbar" style="width: 60%;" aria-valuenow="60"
+                aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="content card my-4 bg-body">
+            <div class="card-body">
+                <h1 class="card-title">Operadores Lógicos en Python
+                </h1>
+                <div class="row my-3">
+                    <div class="col-sm-6 my-3">
+                        <div class="content">
+                            <p>Los operadores lógicos nos permiten evaluar el <code class="language-python">grado de verdad</code> de una o
+                                más sentencias lógicas. Los operadores lógicos en Python son <code class="language-python">and</code>,
+                                <code class="language-python">or</code>, <code class="language-python">not</code>
+                            </p>
+                            <ul>
+                                <li>
+                                    <code class="language-python">and</code> o el operador conjunción determina el grado de verdad de dos
+                                    sentencias, y solo es cierto si ambas sentencias son ciertas.
+
+                                    <table class="table table-border" style="width:75%">
+                                        <tbody>
+                                            <tr>
+                                                <th>P</th>
+                                                <th>Q</th>
+                                                <th>P and Q</th>
+                                            </tr>
+
+                                            <tr>
+                                                <td>true</td>
+                                                <td>true</td>
+                                                <td>true</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>true</td>
+                                                <td>false</td>
+                                                <td>false</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>false</td>
+                                                <td>true</td>
+                                                <td>false</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>false</td>
+                                                <td>false</td>
+                                                <td>false</td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </li>
+
+                                <li>
+                                    <code class="language-python">or</code> o el operador disyunción determina el grado de verdad de dos
+                                    sentencias, y es cierto siempre y cuando al menos una sentencia sea cierta.
+
+                                    <table class="table table-border" style="width:75%">
+                                        <tbody>
+                                            <tr>
+                                                <th>P</th>
+                                                <th>Q</th>
+                                                <th>P and Q</th>
+                                            </tr>
+
+                                            <tr>
+                                                <td>true</td>
+                                                <td>true</td>
+                                                <td>true</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>true</td>
+                                                <td>false</td>
+                                                <td>true</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>false</td>
+                                                <td>true</td>
+                                                <td>true</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>false</td>
+                                                <td>false</td>
+                                                <td>false</td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 my-3">
+                        <div class="content">
+                            <ul>
+                                <li>
+                                    <p><code class="language-python">not</code> o el operador negación invierte el valor de verdad de una
+                                        sentencia</p>
+                                    <table class="table table-border" style="width:75%">
+
+                                        <tbody>
+                                            <tr>
+                                                <th>P</th>
+                                                <th>not P</th>
+                                                <th></th>
+                                            </tr>
+
+                                            <tr>
+                                                <td>true</td>
+                                                <td>false</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>false</td>
+                                                <td>true</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <nav class="mx-auto" aria-label="Page navigation">
+                    <ul class="pagination mb-0
+                            justify-content-center">
+                        <li class="page-item"><a class="page-link" href="page-0.html">Inicio</a></li>
+                        <li class="page-item"><a class="page-link" href="page-1.html">1</a></li>
+                        <li class="page-item"><a class="page-link" href="page-2.html">2</a></li>
+                        <li class="page-item active"><a class="page-link" href="page-3.html">3</a></li>
+                        <li class="page-item"><a class="page-link" href="page-4.html">4</a></li>
+                        <li class="page-item"><a class="page-link" href="page-5.html">5</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="page-4.html" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script> -->
+    <script
+        src="/shared/HTML-Template-Library/HTML-Templates-V3/pages/../_assets/thirdpartylib/jquery/jquery-3.3.1.slim.min.js"></script>
+    <script
+        src="/shared/HTML-Template-Library/HTML-Templates-V3/pages/../_assets/thirdpartylib/popper-js/popper.min.js"></script>
+    <script
+        src="/shared/HTML-Template-Library/HTML-Templates-V3/pages/../_assets/thirdpartylib/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
