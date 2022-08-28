@@ -9,12 +9,9 @@
     <head>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet"
-            href="/shared/HTML-Template-Library/HTML-Templates-V3/pages/../_assets/thirdpartylib/bootstrap-4.3.1/css/bootstrap.min.css">
-        <!-- Font Awesome CSS -->
-        <link rel="stylesheet"
-            href="/shared/HTML-Template-Library/HTML-Templates-V3/pages/../_assets/thirdpartylib/fontawesome-free-5.9.0-web/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css"
+            integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
         <style>
             .borderless a {
                 border: none;
@@ -24,28 +21,34 @@
                 background-color: #74ADF7 !important;
                 border-color: #74ADF7 !important;
             }
+
+            .separation li {
+                margin-bottom: 4px;
+            }
         </style>
     </head>
 
 <body>
     <div class="container-fluid">
-        <nav class="navbar navbar-light bg-transparent">
-            <div class="container-fluid">
-                <a class="mx-auto" href="page-0.html">
-                    <img src="/content/enforced/52087-PGC08/Introduccion-a-la-programacion/logo.jpg" class="img-fluid"
-                        alt="python_logo">
-                </a>
+        <div class="bd-masthead my-5 container-fluid" id="content">
+            <div class="container-xxl bd-gutter">
+                <div class="col-md-8 mx-auto text-center">
+                    <a class="mx-auto" href="page-0.html">
+                        <img class="d-block mx-auto mb-3 img-fluid" src="python-logo-generic.svg" class="img-fluid"
+                            alt="python_logo">
+                    </a>
+                </div>
             </div>
-        </nav>
+        </div>
         <div class="progress mt-2" style="height: 1px; background-color:
                     #74ADF7;">
-            <div class="progress-bar bg-primary" role="progressbar" style="width: 20%;" aria-valuenow="0"
+            <div class="progress-bar bg-primary" role="progressbar" style="width: 25%;" aria-valuenow="0"
                 aria-valuemin="25" aria-valuemax="100"></div>
         </div>
         <div class="progress mt-2" style="height: 15px;
                     background-color: #74ADF7;">
             <div class="progress-bar progress-bar-striped
-                        progress-bar-animated bg-primary" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                        progress-bar-animated bg-primary" role="progressbar" style="width: 25%;" aria-valuenow="0"
                 aria-valuemin="25" aria-valuemax="100"></div>
         </div>
         <div class="content card my-4 bg-body">
@@ -59,10 +62,10 @@
                             <p> También denominados operadores relacionales) se
                                 utilizan para comparar valores. La siguiente
                                 tabla ilustra cómo funcionan los operadores
-                                de comparación, asumiendo que <code class="language-python">x=0, y=1</code>
+                                de comparación, asumiendo que <code class="language-python">x=0</code>,
+                                <code class="language-python">y=1</code>
                                 y
                                 <code class="language-python">z=0</code>:
-
                             </p>
                             <div class="table-responsive my-4 px-4">
                                 <table class="table align-middle">
@@ -90,7 +93,6 @@
                                                 <code class="language-python">x == z # True</code>
                                             </td>
                                         </tr>
-
                                         <tr>
                                             <td>
                                                 <code class="language-python">!=</code>
@@ -100,7 +102,6 @@
                                                     valores de los operandos
                                                     no son iguales, y False
                                                     de lo contrario.
-
                                                 </p>
                                             </td>
                                             <td>
@@ -108,7 +109,6 @@
                                                 <code class="language-python">x != z # False</code>
                                             </td>
                                         </tr>
-
                                         <tr>
                                             <td>
                                                 <code class="language-python">></code>
@@ -126,7 +126,6 @@
                                                 <code class="language-python">y > z # True</code>
                                             </td>
                                         </tr>
-
                                         <tr>
                                             <td>
                                                 <code class="language-python"><</code>
@@ -139,7 +138,6 @@
                                                     operando derecho, y
                                                     False de lo
                                                     contrario.
-
                                                 </p>
                                             </td>
                                             <td>
@@ -147,7 +145,6 @@
                                                 <code class="language-python">y < z  # False </code>
                                             </td>
                                         </tr>
-
                                         <tr>
                                             <td>
                                                 <code class="language-python">&geq;</code>
@@ -163,7 +160,6 @@
                                                 <code class="language-python">x >= z  # True </code>
                                             </td>
                                         </tr>
-
                                         <tr>
                                             <td>
                                                 <code class="language-python">&leq;</code>
@@ -171,7 +167,6 @@
                                             <td>
                                                 <p>Devuelve True si el valor del operando izquierdo es menor o igual al
                                                     valor del operando derecho, y False de lo contrario.
-
                                                 </p>
                                             </td>
                                             <td>
@@ -187,42 +182,48 @@
                     <div class="col-sm-6 my-3">
                         <div class="content">
                             <h2>Las sentencias <code class="language-python">if,elif,else</code></h2>
-                            <p>La estructura <code class="language-python">if / elif / else</code> es una forma común de controlar el flujo de
+                            <p>La estructura <code class="language-python">if / elif / else</code> es una forma común de
+                                controlar el flujo de
                                 un programa,
                                 lo que te permite ejecutar bloques de código específicos según el valor de algunos datos
                             </p>
-                            <p>La sentencia <code class="language-python">if</code> puede entenderse como "Si la expresión evaluada, resulta ser
+                            <p>La sentencia <code class="language-python">if</code> puede entenderse como "Si la
+                                expresión evaluada, resulta ser
                                 verdadera, entonces ejecuta una vez el código en la expresión". Pueden haber más de un
-                                bloque <code class="language-python">if</code> en un script, los cuales evaluaran situaciones diferentes.
+                                bloque <code class="language-python">if</code> en un script, los cuales evaluaran
+                                situaciones diferentes.
 
                             </p>
-                            <p>La sentencia <code class="language-python">elif</code> se usa para cubrir nuevos casos dentro de un flujo
+                            <p>La sentencia <code class="language-python">elif</code> se usa para cubrir nuevos casos
+                                dentro de un flujo
                                 <code class="language-python">if</code>. Esta sentencia no es obligatoria y su
                                 uso depende de la situación
                             </p>
                             <p>La sentencia <code class="language-python">else</code> cubre los casos no espeficados en
-                                sentencias <code class="language-python">if</code> o <code class="language-python">elif</code>. Esta sentencia no es obligatoria y su
+                                sentencias <code class="language-python">if</code> o <code
+                                    class="language-python">elif</code>. Esta sentencia no es obligatoria y su
                                 uso depende de la situación.</p>
-                            <pre class="mx-auto">
-                                    if the_weather_is_good:
-                                        go_for_a_walk()
-                                    elif tickets_are_available:
-                                        go_to_the_theater()
-                                    elif table_is_available:
-                                        go_for_lunch()
-                                    else:
-                                        play_chess_at_home()
+                            <pre class="language-python" style="text-align: left; white-space: pre-line;">
+                                <code class="language-python">if the_weather_is_good:</code>
+                                <code class="language-python">  go_for_a_walk()</code>
+                                <code class="language-python">elif tickets_are_available:</code>
+                                <code class="language-python">  go_to_the_theater()</code>
+                                <code class="language-python">elif table_is_available:</code>
+                                <code class="language-python">  go_for_lunch()</code>
+                                <code class="language-python">else:</code>
+                                <code class="language-python">  play_chess_at_home()</code>
                             </pre>
                         </div>
                     </div>
                 </div>
                 <nav class="mx-auto" aria-label="Page navigation">
-                    <ul class="pagination mb-0 justify-content-center">
+                    <ul class="pagination flex-wrap mb-0 justify-content-center separation">
                         <li class="page-item"><a class="page-link" href="page-0.html">Inicio</a></li>
                         <li class="page-item active"><a class="page-link" href="page-1.html">1</a></li>
                         <li class="page-item"><a class="page-link" href="page-2.html">2</a></li>
                         <li class="page-item"><a class="page-link" href="page-3.html">3</a></li>
                         <li class="page-item"><a class="page-link" href="page-4.html">4</a></li>
+                        <li class="page-item">
                             <a class="page-link" href="page-2.html" aria-label="Next">
                                 <span aria-hidden="true">&raquo;</span>
                             </a>
@@ -232,15 +233,15 @@
             </div>
         </div>
     </div>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-        crossorigin="anonymous"></script> -->
-    <script
-        src="/shared/HTML-Template-Library/HTML-Templates-V3/pages/../_assets/thirdpartylib/jquery/jquery-3.3.1.slim.min.js"></script>
-    <script
-        src="/shared/HTML-Template-Library/HTML-Templates-V3/pages/../_assets/thirdpartylib/popper-js/popper.min.js"></script>
-    <script
-        src="/shared/HTML-Template-Library/HTML-Templates-V3/pages/../_assets/thirdpartylib/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"
+        integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"
+        integrity="sha512-SkmBfuA2hqjzEVpmnMt/LINrjop3GKWqsuLSSB3e7iBmYK7JuWw4ldmmxwD9mdm2IRTTi0OxSAfEGvgEi0i2Kw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 
 </html>

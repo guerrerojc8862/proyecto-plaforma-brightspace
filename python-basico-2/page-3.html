@@ -9,12 +9,9 @@
     <head>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet"
-            href="/shared/HTML-Template-Library/HTML-Templates-V3/pages/../_assets/thirdpartylib/bootstrap-4.3.1/css/bootstrap.min.css">
-        <!-- Font Awesome CSS -->
-        <link rel="stylesheet"
-            href="/shared/HTML-Template-Library/HTML-Templates-V3/pages/../_assets/thirdpartylib/fontawesome-free-5.9.0-web/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css"
+            integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
         <style>
             .borderless a {
                 border: none;
@@ -24,29 +21,35 @@
                 background-color: #74ADF7 !important;
                 border-color: #74ADF7 !important;
             }
+
+            .separation li {
+                margin-bottom: 4px;
+            }
         </style>
     </head>
 
 <body>
     <div class="container-fluid">
-        <nav class="navbar navbar-light bg-transparent">
-            <div class="container-fluid">
-                <a class="mx-auto" href="page-0.html">
-                    <img src="/content/enforced/52087-PGC08/Introduccion-a-la-programacion/logo.jpg" class="img-fluid"
-                        alt="python_logo">
-                </a>
+        <div class="bd-masthead my-5 container-fluid" id="content">
+            <div class="container-xxl bd-gutter">
+                <div class="col-md-8 mx-auto text-center">
+                    <a class="mx-auto" href="page-0.html">
+                        <img class="d-block mx-auto mb-3 img-fluid" src="python-logo-generic.svg" class="img-fluid"
+                            alt="python_logo">
+                    </a>
+                </div>
             </div>
-        </nav>
+        </div>
         <div class="progress mt-2" style="height: 1px; background-color:
                     #74ADF7;">
-            <div class="progress-bar bg-primary" role="progressbar" style="width: 20%;" aria-valuenow="0"
-                aria-valuemin="25" aria-valuemax="100"></div>
+            <div class="progress-bar bg-primary" role="progressbar" style="width: 75%;" aria-valuenow="0"
+                aria-valuemin="75" aria-valuemax="100"></div>
         </div>
         <div class="progress mt-2" style="height: 15px;
                     background-color: #74ADF7;">
             <div class="progress-bar progress-bar-striped
-                        progress-bar-animated bg-primary" role="progressbar" style="width: 75%;" aria-valuenow="75"
-                aria-valuemin="0" aria-valuemax="100"></div>
+                        progress-bar-animated bg-primary" role="progressbar" style="width: 75%;" aria-valuenow="0"
+                aria-valuemin="75" aria-valuemax="100"></div>
         </div>
         <div class="content card my-4 bg-body">
             <div class="card-body">
@@ -55,89 +58,84 @@
                 <div class="row my-3">
                     <div class="col-sm-6 my-3">
                         <div class="content">
-                            <p>Los operadores lógicos nos permiten evaluar el <code class="language-python">grado de verdad</code> de una o
-                                más sentencias lógicas. Los operadores lógicos en Python son <code class="language-python">and</code>,
+                            <p>Los operadores lógicos nos permiten evaluar el <code
+                                    class="language-python">grado de verdad</code> de una o
+                                más sentencias lógicas. Los operadores lógicos en Python son <code
+                                    class="language-python">and</code>,
                                 <code class="language-python">or</code>, <code class="language-python">not</code>
                             </p>
                             <ul>
                                 <li>
-                                    <code class="language-python">and</code> o el operador conjunción determina el grado de verdad de dos
+                                    <code class="language-python">and</code> o el operador conjunción determina el grado
+                                    de verdad de dos
                                     sentencias, y solo es cierto si ambas sentencias son ciertas.
-
-                                    <table class="table table-border" style="width:75%">
-                                        <tbody>
-                                            <tr>
-                                                <th>P</th>
-                                                <th>Q</th>
-                                                <th>P and Q</th>
-                                            </tr>
-
-                                            <tr>
-                                                <td>true</td>
-                                                <td>true</td>
-                                                <td>true</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>true</td>
-                                                <td>false</td>
-                                                <td>false</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>false</td>
-                                                <td>true</td>
-                                                <td>false</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>false</td>
-                                                <td>false</td>
-                                                <td>false</td>
-                                            </tr>
-
-                                        </tbody>
-                                    </table>
+                                    <div class="table-responsive">
+                                        <table class="table table-border">
+                                            <tbody>
+                                                <tr>
+                                                    <th>P</th>
+                                                    <th>Q</th>
+                                                    <th>P and Q</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>true</td>
+                                                    <td>true</td>
+                                                    <td>true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>true</td>
+                                                    <td>false</td>
+                                                    <td>false</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>false</td>
+                                                    <td>true</td>
+                                                    <td>false</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>false</td>
+                                                    <td>false</td>
+                                                    <td>false</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </li>
-
                                 <li>
-                                    <code class="language-python">or</code> o el operador disyunción determina el grado de verdad de dos
+                                    <code class="language-python">or</code> o el operador disyunción determina el grado
+                                    de verdad de dos
                                     sentencias, y es cierto siempre y cuando al menos una sentencia sea cierta.
-
-                                    <table class="table table-border" style="width:75%">
-                                        <tbody>
-                                            <tr>
-                                                <th>P</th>
-                                                <th>Q</th>
-                                                <th>P and Q</th>
-                                            </tr>
-
-                                            <tr>
-                                                <td>true</td>
-                                                <td>true</td>
-                                                <td>true</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>true</td>
-                                                <td>false</td>
-                                                <td>true</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>false</td>
-                                                <td>true</td>
-                                                <td>true</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>false</td>
-                                                <td>false</td>
-                                                <td>false</td>
-                                            </tr>
-
-                                        </tbody>
-                                    </table>
+                                    <div class="table-responsive">
+                                        <table class="table table-border">
+                                            <tbody>
+                                                <tr>
+                                                    <th>P</th>
+                                                    <th>Q</th>
+                                                    <th>P and Q</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>true</td>
+                                                    <td>true</td>
+                                                    <td>true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>true</td>
+                                                    <td>false</td>
+                                                    <td>true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>false</td>
+                                                    <td>true</td>
+                                                    <td>true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>false</td>
+                                                    <td>false</td>
+                                                    <td>false</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -146,41 +144,41 @@
                         <div class="content">
                             <ul>
                                 <li>
-                                    <p><code class="language-python">not</code> o el operador negación invierte el valor de verdad de una
+                                    <p><code class="language-python">not</code> o el operador negación invierte el valor
+                                        de verdad de una
                                         sentencia</p>
-                                    <table class="table table-border" style="width:75%">
-
-                                        <tbody>
-                                            <tr>
-                                                <th>P</th>
-                                                <th>not P</th>
-                                                <th></th>
-                                            </tr>
-
-                                            <tr>
-                                                <td>true</td>
-                                                <td>false</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>false</td>
-                                                <td>true</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                    <div class="table-responsive">
+                                        <table class="table table-border">
+                                            <tbody>
+                                                <tr>
+                                                    <th>P</th>
+                                                    <th>not P</th>
+                                                    <th></th>
+                                                </tr>
+                                                <tr>
+                                                    <td>true</td>
+                                                    <td>false</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>false</td>
+                                                    <td>true</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <nav class="mx-auto" aria-label="Page navigation">
-                    <ul class="pagination mb-0
-                            justify-content-center">
+                    <ul class="pagination flex-wrap mb-0 justify-content-center separation">
                         <li class="page-item"><a class="page-link" href="page-0.html">Inicio</a></li>
                         <li class="page-item"><a class="page-link" href="page-1.html">1</a></li>
                         <li class="page-item"><a class="page-link" href="page-2.html">2</a></li>
                         <li class="page-item active"><a class="page-link" href="page-3.html">3</a></li>
                         <li class="page-item"><a class="page-link" href="page-4.html">4</a></li>
+                        <li class="page-item">
                             <a class="page-link" href="page-4.html" aria-label="Next">
                                 <span aria-hidden="true">&raquo;</span>
                             </a>
@@ -190,15 +188,15 @@
             </div>
         </div>
     </div>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-        crossorigin="anonymous"></script> -->
-    <script
-        src="/shared/HTML-Template-Library/HTML-Templates-V3/pages/../_assets/thirdpartylib/jquery/jquery-3.3.1.slim.min.js"></script>
-    <script
-        src="/shared/HTML-Template-Library/HTML-Templates-V3/pages/../_assets/thirdpartylib/popper-js/popper.min.js"></script>
-    <script
-        src="/shared/HTML-Template-Library/HTML-Templates-V3/pages/../_assets/thirdpartylib/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"
+        integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"
+        integrity="sha512-SkmBfuA2hqjzEVpmnMt/LINrjop3GKWqsuLSSB3e7iBmYK7JuWw4ldmmxwD9mdm2IRTTi0OxSAfEGvgEi0i2Kw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 
 </html>
