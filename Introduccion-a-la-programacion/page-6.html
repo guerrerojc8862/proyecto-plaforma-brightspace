@@ -9,12 +9,6 @@
     <head>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet"
-            href="/shared/HTML-Template-Library/HTML-Templates-V3/pages/../_assets/thirdpartylib/bootstrap-4.3.1/css/bootstrap.min.css">
-        <!-- Font Awesome CSS -->
-        <link rel="stylesheet"
-            href="/shared/HTML-Template-Library/HTML-Templates-V3/pages/../_assets/thirdpartylib/fontawesome-free-5.9.0-web/css/all.min.css">
         <style>
             .borderless a {
                 border: none;
@@ -24,18 +18,25 @@
                 background-color: #74ADF7 !important;
                 border-color: #74ADF7 !important;
             }
+
+            .separation li {
+                margin-bottom: 4px;
+            }
         </style>
     </head>
 
 <body>
     <div class="container-fluid">
-        <nav class="navbar navbar-light bg-transparent">
-            <div class="container-fluid">
-                <a class="mx-auto" href="page-0.html">
-                    <img src="logo.jpg" class="img-fluid" alt="python_logo">
-                </a>
+        <div class="bd-masthead my-5 container-fluid" id="content">
+            <div class="container-xxl bd-gutter">
+                <div class="col-md-8 mx-auto text-center">
+                    <a class="mx-auto" href="page-0.html">
+                        <img class="d-block mx-auto mb-3 img-fluid" src="python-logo-generic.svg" class="img-fluid"
+                            alt="python_logo">
+                    </a>
+                </div>
             </div>
-        </nav>
+        </div>
         <div class="progress  mt-2" style="height: 1px; background-color: #74ADF7;">
             <div class="progress-bar bg-primary" role="progressbar" style="width: 100%;" aria-valuenow="0"
                 aria-valuemin="100" aria-valuemax="100"></div>
@@ -102,7 +103,7 @@
                     </div>
                 </div>
                 <nav class="mx-auto" aria-label="Page navigation">
-                    <ul class="pagination mb-0 justify-content-center">
+                    <ul class="pagination flex-wrap mb-0 justify-content-center separation">
                         <li class="page-item"><a class="page-link" href="page-0.html">Inicio</a></li>
                         <li class="page-item"><a class="page-link" href="page-1.html">1</a></li>
                         <li class="page-item"><a class="page-link" href="page-2.html">2</a></li>
@@ -115,16 +116,9 @@
             </div>
         </div>
     </div>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-        crossorigin="anonymous"></script> -->
-    <script
-        src="/shared/HTML-Template-Library/HTML-Templates-V3/pages/../_assets/thirdpartylib/jquery/jquery-3.3.1.slim.min.js"></script>
-    <script
-        src="/shared/HTML-Template-Library/HTML-Templates-V3/pages/../_assets/thirdpartylib/popper-js/popper.min.js"></script>
-    <script
-        src="/shared/HTML-Template-Library/HTML-Templates-V3/pages/../_assets/thirdpartylib/bootstrap-4.3.1/js/bootstrap.min.js"></script>
-
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,24 +1,15 @@
 <html lang="en">
 
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1,
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,
             shrink-to-fit=no">
 
-        <head>
-            <link
-                href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-                rel="stylesheet"
-                integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
-                crossorigin="anonymous">
-            <!-- Bootstrap CSS -->
-            <link rel="stylesheet"
-                href="/shared/HTML-Template-Library/HTML-Templates-V3/pages/../_assets/thirdpartylib/bootstrap-4.3.1/css/bootstrap.min.css">
-            <!-- Font Awesome CSS -->
-            <link rel="stylesheet"
-                href="/shared/HTML-Template-Library/HTML-Templates-V3/pages/../_assets/thirdpartylib/fontawesome-free-5.9.0-web/css/all.min.css">
-            <style>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <style>
             .borderless a {
                 border: none;
             }
@@ -27,141 +18,113 @@
                 background-color: #74ADF7 !important;
                 border-color: #74ADF7 !important;
             }
+
+            .separation li {
+                margin-bottom: 4px;
+            }
         </style>
-        </head>
+    </head>
 
-        <body>
-            <div class="container-fluid">
-                <nav class="navbar navbar-light bg-transparent">
-                    <div class="container-fluid">
-                        <a class="mx-auto" href="page-0.html">
-                            <img
-                                src="/content/enforced/52087-PGC08/Introduccion-a-la-programacion/logo.jpg"
-                                class="img-fluid" alt="python_logo">
-                        </a>
-                    </div>
-                </nav>
-                <div class="progress mt-2" style="height: 1px; background-color:
+<body>
+    <div class="container-fluid">
+        <div class="bd-masthead my-5 container-fluid" id="content">
+            <div class="container-xxl bd-gutter">
+                <div class="col-md-8 mx-auto text-center">
+                    <a class="mx-auto" href="page-0.html">
+                        <img class="d-block mx-auto mb-3 img-fluid" src="python-logo-generic.svg" class="img-fluid"
+                            alt="python_logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="progress mt-2" style="height: 1px; background-color:
                     #74ADF7;">
-                    <div class="progress-bar bg-primary" role="progressbar"
-                        style="width: 17%;" aria-valuenow="0"
-                        aria-valuemin="17" aria-valuemax="100"></div>
-                </div>
-                <div class="progress mt-2" style="height: 15px;
+            <div class="progress-bar bg-primary" role="progressbar" style="width: 34%;" aria-valuenow="0"
+                aria-valuemin="34" aria-valuemax="100"></div>
+        </div>
+        <div class="progress mt-2" style="height: 15px;
                     background-color: #74ADF7;">
-                    <div class="progress-bar progress-bar-striped
-                        progress-bar-animated bg-primary" role="progressbar"
-                        style="width: 34%;" aria-valuenow="34" aria-valuemin="17"
-                        aria-valuemax="100"></div>
-                </div>
-                <div class="content card my-4 bg-body">
-                    <div class="card-body">
-                        <h1 class="card-title">Cómo escribir y ejecutar tu
-                            primer programa
-
-                        </h1>
-                        <div class="row my-3">
-                            <div class="col-sm-6 my-3">
-                                <div class="content">
-                                    <p>Ahora es el momento de escribir y
-                                        ejecutar tu primer programa en Python 3.
-                                        Por ahora, será muy simple.
-
-
-
-                                    </p><br>
-                                    <p>El primer paso es crear un nuevo archivo
-                                        fuente y llenarlo con el código. Haz
-                                        clic en File en el menú del IDLE y
-                                        selecciona New File.
-                                            <div> <img src="/content/enforced/52087-PGC08/Introduccion-a-python/idle-1.png"
-                                                    style="min-height: 30vh;
-                                                    max-height: 40vh">
-                                            </div>
-                                        </p><br>
-                                        <p>Como puedes ver, IDLE abre una nueva
-                                            ventana para ti. Puedes usarla para
-                                            escribir y modificar tu código.
-
-
-
-                                        </p><br>
-                                        <p>Esta es la ventana del editor. Su
-                                            único propósito es ser un lugar de
-                                            trabajo en el que se trate tu código
-                                            fuente. No confundas la ventana del
-                                            editor con la ventana del shell.
-                                            Realizan diferentes funciones.
-
-
-                                        </p><br>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 my-3">
-                                    <div class="content">
-                                        <p>Haz clic en File (en la nueva
-                                            ventana), luego haz clic sobre Save
-                                            as ... , selecciona una carpeta para
-                                            el nuevo archivo (el escritorio es
-                                            un buen lugar para tus primeros
-                                            intentos de programación) y elige un
-                                            nombre para el nuevo archivo.
-
-                                        </p><br>
-                                        <p>Nota: no establezcas ninguna
-                                            extensión para el nombre de archivo
-                                            que vas a utilizar. Python necesita
-                                            que sus archivos tengan la extensión
-                                            .py, por lo que debes confiar en los
-                                            valores predeterminados de la
-                                            ventana de diálogo. El uso de la
-                                            extensión .py permite que el sistema
-                                            operativo abra estos archivos
-                                            correctamente.
-
-                                        </p>
-
-                                    </div>
-                                </div>
+            <div class="progress-bar progress-bar-striped
+                        progress-bar-animated bg-primary" role="progressbar" style="width: 34%;" aria-valuenow="34"
+                aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="content card my-4 bg-body">
+            <div class="card-body">
+                <h1 class="card-title">Cómo escribir y ejecutar tu primer programa</h1>
+                <div class="row my-3">
+                    <div class="col-sm-6 my-3">
+                        <div class="content">
+                            <p>Ahora es el momento de escribir y
+                                ejecutar tu primer programa en Python 3.
+                                Por ahora, será muy simple.
+                            </p><br>
+                            <p>El primer paso es crear un nuevo archivo
+                                fuente y llenarlo con el código. Haz
+                                clic en File en el menú del IDLE y
+                                selecciona New File.
+                            </p>
+                            <div class="container-fluid px-0 my-2">
+                                <img class="img-fluid" src="idle-1.png">
                             </div>
-                            <nav class="mx-auto" aria-label="Page navigation">
-                                <ul class="pagination mb-0
-                                    justify-content-center">
-                                    <li class="page-item"><a class="page-link"
-                                            href="page-0.html">Inicio</a></li>
-                                    <li class="page-item"><a
-                                            class="page-link"
-                                            href="page-1.html">1</a></li>
-                                    <li class="page-item active"><a class="page-link"
-                                            href="page-2.html">2</a></li>
-                                    <li class="page-item"><a class="page-link"
-                                            href="page-3.html">3</a></li>
-                                    <li class="page-item"><a class="page-link"
-                                            href="page-4.html">4</a></li>
-                                    <li class="page-item"><a class="page-link"
-                                            href="page-5.html">5</a></li>
-                                    <li class="page-item"><a class="page-link"
-                                            href="page-6.html">6</a></li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="page-3.html"
-                                            aria-label="Next">
-                                            <span aria-hidden="true">&raquo;</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
+                            <p>Como puedes ver, IDLE abre una nueva
+                                ventana para ti. Puedes usarla para
+                                escribir y modificar tu código.
+                            </p><br>
+                            <p>Esta es la ventana del editor. Su
+                                único propósito es ser un lugar de
+                                trabajo en el que se trate tu código
+                                fuente. No confundas la ventana del
+                                editor con la ventana del shell.
+                                Realizan diferentes funciones.
+                            </p><br>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 my-3">
+                        <div class="content">
+                            <p>Haz clic en File (en la nueva
+                                ventana), luego haz clic sobre Save
+                                as ... , selecciona una carpeta para
+                                el nuevo archivo (el escritorio es
+                                un buen lugar para tus primeros
+                                intentos de programación) y elige un
+                                nombre para el nuevo archivo.
+                            </p><br>
+                            <p>Nota: no establezcas ninguna
+                                extensión para el nombre de archivo
+                                que vas a utilizar. Python necesita
+                                que sus archivos tengan la extensión
+                                .py, por lo que debes confiar en los
+                                valores predeterminados de la
+                                ventana de diálogo. El uso de la
+                                extensión .py permite que el sistema
+                                operativo abra estos archivos
+                                correctamente.
+                            </p>
                         </div>
                     </div>
                 </div>
-                <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+                <nav class="mx-auto" aria-label="Page navigation">
+                    <ul class="pagination flex-wrap mb-0 justify-content-center separation">
+                        <li class="page-item"><a class="page-link" href="page-0.html">Inicio</a></li>
+                        <li class="page-item"><a class="page-link" href="page-1.html">1</a></li>
+                        <li class="page-item active"><a class="page-link" href="page-2.html">2</a></li>
+                        <li class="page-item"><a class="page-link" href="page-3.html">3</a></li>
+                        <li class="page-item"><a class="page-link" href="page-4.html">4</a></li>
+                        <li class="page-item"><a class="page-link" href="page-5.html">5</a></li>
+                        <li class="page-item"><a class="page-link" href="page-6.html">6</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="page-3.html" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-        crossorigin="anonymous"></script> -->
-                <script
-                    src="/shared/HTML-Template-Library/HTML-Templates-V3/pages/../_assets/thirdpartylib/jquery/jquery-3.3.1.slim.min.js"></script>
-                <script
-                    src="/shared/HTML-Template-Library/HTML-Templates-V3/pages/../_assets/thirdpartylib/popper-js/popper.min.js"></script>
-                <script
-                    src="/shared/HTML-Template-Library/HTML-Templates-V3/pages/../_assets/thirdpartylib/bootstrap-4.3.1/js/bootstrap.min.js"></script>
-            </body>
+        crossorigin="anonymous"></script>
+</body>
 
-        </html>
+</html>
