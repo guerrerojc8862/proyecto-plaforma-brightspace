@@ -1,0 +1,219 @@
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+            shrink-to-fit=no">
+
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css"
+            integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            .borderless a {
+                border: none;
+            }
+
+            .active a {
+                background-color: #74ADF7 !important;
+                border-color: #74ADF7 !important;
+            }
+
+            .separation li {
+                margin-bottom: 4px;
+            }
+        </style>
+    </head>
+
+<body>
+    <div class="container-fluid">
+        <div class="bd-masthead my-5 container-fluid" id="content">
+            <div class="container-xxl bd-gutter">
+                <div class="col-md-8 mx-auto text-center">
+                    <a class="mx-auto" href="page-0.html">
+                        <img class="d-block mx-auto mb-3 img-fluid" src="python-logo-generic.svg" class="img-fluid"
+                            alt="python_logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="progress mt-2" style="height: 1px; background-color:
+                    #74ADF7;">
+            <div class="progress-bar bg-primary" role="progressbar" style="width: 50%;" aria-valuenow="0"
+                aria-valuemin="50" aria-valuemax="100"></div>
+        </div>
+        <div class="progress mt-2" style="height: 15px;
+                    background-color: #74ADF7;">
+            <div class="progress-bar progress-bar-striped
+                        progress-bar-animated bg-primary" role="progressbar" style="width: 50%;" aria-valuenow="0"
+                aria-valuemin="50" aria-valuemax="100"></div>
+        </div>
+        <div class="content card my-4 bg-body">
+            <div class="card-body">
+                <h1 class="card-title">Más sobre funciones</code>
+                </h1>
+                <div class="row my-3">
+                    <div class="col-sm-6 my-3">
+                        <div class="content">
+                            <h2>Funciones con parámetros</h2>
+                            <p>Se puede pasar información a las funciones utilizando parámetros. Las funciones pueden
+                                tener tantos parámetros como sean necesarios.<br>
+                                <br>
+                                Un ejemplo de una función con un parámetro:
+                            </p>
+                            <pre class="language-python" style="text-align: left; white-space: pre-line;">
+                                <code class="language-python">def hi(name):</code>
+                                <code class="language-python">    print("Hola,", name)
+                                </code>
+                                <code class="language-python">hi("Greg")</code>
+                            </pre>
+                            <p>Un ejemplo de una función de dos parámetros:</p>
+                            <pre class="language-python" style="text-align: left; white-space: pre-line;">
+                                <code class="language-python">def hi_all(name_1, name_2):</code>
+                                <code class="language-python">    print("Hola,", name_2)</code>
+                                <code class="language-python">    print("Hola,", name_1)
+                                </code>
+                                <code class="language-python">hi_all("Sebastián", "Konrad")</code>
+                            </pre>
+                            <p>Un ejemplo de una función de tres parámetros:</p>
+                            <pre class="language-python" style="text-align: left; white-space: pre-line;">
+                                <code class="language-python">def address(street, city, postal_code):</code>
+                                <code class="language-python">    print("Tu dirección es:", street, city, postal_code)
+                                </code>
+                                <code class="language-python">s = input("Calle: ")</code>
+                                <code class="language-python">p_c = input("Código Postal: ")</code>
+                                <code class="language-python">c = input("Ciudad: ")</code>
+                                <code class="language-python">address(s, c, p_c)</code>
+                            </pre>
+                            <h2>Formas de pasar parámetros a una función</h2>
+                            <p>Puedes pasar argumentos a una función utilizando las siguientes técnicas:</p>
+                            <ul>
+                                <li>
+                                    <p><strong>Paso de argumentos posicionales</strong> en la cual el orden de los
+                                        parámetros es
+                                        relevante (Ejemplo 1).
+                                    </p>
+                                </li>
+                                <li>
+                                    <p><strong>Paso de argumentos con palabras clave</strong> en la cual el orden de los
+                                        argumentos es irrelevante (Ejemplo 2).
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>Una mezcla de argumentos posicionales y con palabras clave (Ejemplo 3).</p>
+                                </li>
+                            </ul>
+                            <pre class="language-python" style="text-align: left; white-space: pre-line;">
+                                <code class="language-python">#Ejemplo 1</code>
+                                <code class="language-python">def subtra(a, b):</code>
+                                <code class="language-python">    print(a - b)</code>
+                                <code class="language-python"></code>
+                                <code class="language-python">subtra(5, 2)    # salida: 3</code>
+                                <code class="language-python">subtra(2, 5)    # salida: -3</code>
+                                <code class="language-python"></code>
+                                <code class="language-python"></code>
+                                <code class="language-python">#Ejemplo 2</code>
+                                <code class="language-python">def subtra(a, b):</code>
+                                <code class="language-python">    print(a - b)</code>
+                                <code class="language-python"></code>
+                                <code class="language-python">subtra(a=5, b=2)    # salida: 3</code>
+                                <code class="language-python">subtra(b=2, a=5)    # salida: 3</code>
+                                <code class="language-python"></code>
+                                <code class="language-python">#Ejemplo 3</code>
+                                <code class="language-python">def subtra(a, b):</code>
+                                <code class="language-python">    print(a - b)</code>
+                                <code class="language-python"></code>
+                                <code class="language-python">subtra(5, b=2)    # salida: 3</code>
+                                <code class="language-python">subtra(5, 2)    # salida: 3</code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 my-3">
+                        <div class="content">
+                            <p>Es importante recordar que <strong>primero se especifican los argumentos posicionales y
+                                    después
+                                    los de palabras clave</strong>. Es por esa razón que si se intenta ejecutar el
+                                siguiente código:
+                            </p>
+                            <pre class="language-python" style="text-align: left; white-space: pre-line;">
+                                <code class="language-python">def subtra(a, b):</code>
+                                <code class="language-python">    print(a - b)</code>
+                                <code class="language-python"></code>
+                                <code class="language-python">subtra(5, b=2)    # salida: 3</code>
+                                <code class="language-python">subtra(a=5, 2)    # Syntax Error</code>
+                            </pre>
+                            <p>Python no lo ejecutará y marcará un error de sintaxis <code
+                                    class="language-python">SyntaxError</code>.
+                            </p>
+                            <p>Se puede utilizar la técnica de argumentos con palabras clave para asignar valores
+                                <strong>predefinidos</strong> a los argumentos:
+                            </p>
+                            <pre class="language-python" style="text-align: left; white-space: pre-line;">
+                                <code class="language-python">def name(first_name, last_name="Pérez"):</code>
+                                <code class="language-python">    print(first_name, last_name)</code>
+                                <code class="language-python"></code>
+                                <code class="language-python">name("Andy")    # salida: Andy Pérez</code>
+                                <code class="language-python">name("Bety", "Rodríguez")    # salida: Bety Rodríguez (el argumento de palabra clave es reemplazado por "Rodríguez")</code>
+                            </pre>
+                            <h2>Retonar y guardar valores de una función</h2>
+                            <p>Puedes emplear la palabra clave reservada <code class="language-python">return</code>
+                                para decirle a una función que devuelva
+                                algún valor. La instrucción <code class="language-python">return</code> termina la
+                                función, por ejemplo:
+                            </p>
+                            <pre class="language-python" style="text-align: left; white-space: pre-line;">
+                                <code class="language-python">def multiply(a, b):</code>
+                                <code class="language-python">    return a * b</code>
+                                <code class="language-python"></code>
+                                <code class="language-python">print(multiply(3, 4))    # salida: 12</code>
+                                <code class="language-python"></code>
+                                <code class="language-python"></code>
+                                <code class="language-python">def multiply(a, b):</code>
+                                <code class="language-python">    return</code>
+                                <code class="language-python"></code>
+                                <code class="language-python">print(multiply(3, 4))    # salida: None</code>
+                            </pre>
+                            <p>El resultado de una función se puede asignar fácilmente a una variable, por ejemplo:</p>
+                            <pre class="language-python" style="text-align: left; white-space: pre-line;">
+                                <code class="language-python">def wishes():</code>
+                                <code class="language-python">    return "¡Felíz Cumpleaños!"</code>
+                                <code class="language-python"></code>
+                                <code class="language-python">w = wishes()</code>
+                                <code class="language-python"></code>
+                                <code class="language-python">print(w)    # salida:¡Felíz Cumpleaños!</code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+                <nav class="mx-auto" aria-label="Page navigation">
+                    <ul class="pagination flex-wrap mb-0 justify-content-center separation">
+                        <li class="page-item"><a class="page-link" href="page-0.html">Inicio</a></li>
+                        <li class="page-item"><a class="page-link" href="page-1.html">1</a></li>
+                        <li class="page-item active"><a class="page-link" href="page-2.html">2</a></li>
+                        <li class="page-item"><a class="page-link" href="page-3.html">3</a></li>
+                        <li class="page-item"><a class="page-link" href="page-4.html">4</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="page-3.html" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"
+        integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"
+        integrity="sha512-SkmBfuA2hqjzEVpmnMt/LINrjop3GKWqsuLSSB3e7iBmYK7JuWw4ldmmxwD9mdm2IRTTi0OxSAfEGvgEi0i2Kw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>

@@ -1,0 +1,220 @@
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+            shrink-to-fit=no">
+
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css"
+            integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            .borderless a {
+                border: none;
+            }
+
+            .active a {
+                background-color: #74ADF7 !important;
+                border-color: #74ADF7 !important;
+            }
+
+            .separation li {
+                margin-bottom: 4px;
+            }
+        </style>
+    </head>
+
+<body>
+    <div class="container-fluid">
+        <div class="bd-masthead my-5 container-fluid" id="content">
+            <div class="container-xxl bd-gutter">
+                <div class="col-md-8 mx-auto text-center">
+                    <a class="mx-auto" href="page-0.html">
+                        <img class="d-block mx-auto mb-3 img-fluid" src="python-logo-generic.svg" class="img-fluid"
+                            alt="python_logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="progress mt-2" style="height: 1px; background-color:
+                    #74ADF7;">
+            <div class="progress-bar bg-primary" role="progressbar" style="width: 100%;" aria-valuenow="0"
+                aria-valuemin="100" aria-valuemax="100"></div>
+        </div>
+        <div class="progress mt-2" style="height: 15px;
+                    background-color: #74ADF7;">
+            <div class="progress-bar progress-bar-striped
+                        progress-bar-animated bg-primary" role="progressbar" style="width: 100%;" aria-valuenow="0"
+                aria-valuemin="100" aria-valuemax="100"></div>
+        </div>
+        <div class="content card my-4 bg-body">
+            <div class="card-body">
+                <h1 class="card-title">Diccionarios</code>
+                </h1>
+                <div class="row my-3">
+                    <div class="col-sm-6 my-3">
+                        <div class="content">
+                            <h2>¿Qué es un Diccionario?</h2>
+                            <p> Los diccionarios son *colecciones indexadas de datos, mutables y desordenadas. (*En
+                                Python 3.6x los diccionarios están ordenados de manera predeterminada.<br>
+                                <br>
+                                Cada diccionario es un par de <i>clave</i> : <i>valor</i>. Se puede crear empleado la
+                                siguiente
+                                sintaxis:
+                            </p>
+                            <pre class="language-python" style="text-align: left; white-space: pre-line;">
+                                <code class="language-python">my_dictionary = {</code>
+                                <code class="language-python">    key1: value1,</code>
+                                <code class="language-python">    key2: value2,</code>
+                                <code class="language-python">    key3: value3,</code>
+                                <code class="language-python">}</code>
+                            </pre><br>
+                            <h2>¿Cómo crear o inicializar un Diccionario?</h2>
+                            <p>Se puede crear un diccionario vacío de la siguiente manera:</p>
+                            <pre class="language-python" style="text-align: left; white-space: pre-line;">
+                                <code class="language-python">empty_dict = {}</code>
+                                <code class="language-python">print(type(empty_dict))    # salida: class 'dict'</code>
+                            </pre><br>
+                            <h2>¿Cómo acceder a los elementos de un diccionario?</h2>
+                            <p>Si se desea acceder a un elemento del diccionario, se puede hacer haciendo referencia a
+                                su clave colocándola dentro de corchetes (Ejemplo 1) o utilizando el método <code
+                                    class="language-python">get()</code> (Ejemplo 2):</p>
+                            <pre class="language-python" style="text-align: left; white-space: pre-line;">
+                                <code class="language-python">pol_esp_dictionary = {</code>
+                                <code class="language-python">    "kwiat": "flor",</code>
+                                <code class="language-python">    "woda": "agua",</code>
+                                <code class="language-python">    "gleba": "tierra"</code>
+                                <code class="language-python">    }</code>
+                                <code class="language-python"></code>
+                                <code class="language-python">item_1 = pol_esp_dictionary["gleba"]    # Ejemplo 1.</code>
+                                <code class="language-python">print(item_1)    # salida: tierra</code>
+                                <code class="language-python"></code>
+                                <code class="language-python">item_2 = pol_esp_dictionary.get("woda")    # Ejemplo 2.</code>
+                                <code class="language-python">print(item_2)    # salida: agua</code>
+                            </pre>
+                            <br>
+                            <h2>Modificar, eliminar, insertar valores de un diccionario</h2>
+                            <p> Si se desea <strong>cambiar</strong> el valor asociado a una clave específica, se puede
+                                hacer haciendo
+                                referencia a la clave del elemento, a continuación se muestra un ejemplo:
+                            </p>
+                            <pre class="language-python" style="text-align: left; white-space: pre-line;">
+                                <code class="language-python">pol_esp_dictionary = {</code>
+                                <code class="language-python">    "zamek" : "castillo",</code>
+                                <code class="language-python">    "woda"  : "agua",</code>
+                                <code class="language-python">    "gleba" : "tierra"</code>
+                                <code class="language-python">    }</code>
+                                <code class="language-python"></code>
+                                <code class="language-python">pol_esp_dictionary["zamek"] = "cerradura"</code>
+                                <code class="language-python">item = pol_esp_dictionary["zamek"]</code>
+                                <code class="language-python">print(item)  # salida: cerradura</code>
+                            </pre>
+                            <p>Para <strong>agregar</strong> o <strong>eliminar</strong> una clave (junto con su valor
+                                asociado), emplea la siguiente
+                                sintaxis:
+                            </p>
+                            <pre class="language-python" style="text-align: left; white-space: pre-line;">
+                                <code class="language-python">phonebook = {}    # un diccionario vacío</code>
+                                <code class="language-python"></code>
+                                <code class="language-python">phonebook["Adán"] = 3456783958    # crear/agregar un par clave-valor</code>
+                                <code class="language-python">print(phonebook)    # salida: {'Adán': 3456783958}</code>
+                                <code class="language-python"></code>
+                                <code class="language-python">del phonebook["Adán"]</code>
+                                <code class="language-python">print(phonebook)    # salida: {}</code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 my-3">
+                        <div class="content">
+                            <p>Además, se puede insertar un elemento a un diccionario utilizando el método <code
+                                    class="language-python">update()</code> y
+                                eliminar el ultimo elemento con el método <code class="language-python">popitem()</code>
+                                por ejemplo:</p>
+                            <pre class="language-python" style="text-align: left; white-space: pre-line;">
+                                <code class="language-python">pol_esp_dictionary = {"kwiat": "flor"}</code>
+                                <code class="language-python"></code>
+                                <code class="language-python">pol_esp_dictionary.update({"gleba": "tierra"})</code>
+                                <code class="language-python">print(pol_esp_dictionary)    # salida: {'kwiat': 'flor', 'gleba': 'tierra'}</code>
+                                <code class="language-python"></code>
+                                <code class="language-python">pol_esp_dictionary.popitem()</code>
+                                <code class="language-python">print(pol_esp_dictionary)    # salida: {'kwiat': 'flor'}</code>
+                            </pre>
+                            <br>
+                            <h2>Iterar sobre los Diccionarios</h2>
+                            <p>Se puede emplear el bucle for para iterar a través del diccionario, por ejemplo:</p>
+                            <pre class="language-python" style="text-align: left; white-space: pre-line;">
+                                <code class="language-python">pol_esp_dictionary = {</code>
+                                <code class="language-python">    "zamek": "castillo",</code>
+                                <code class="language-python">    "woda": "agua",</code>
+                                <code class="language-python">    "gleba": "tierra"</code>
+                                <code class="language-python">    }</code>
+                                <code class="language-python"></code>
+                                <code class="language-python">for item in pol_esp_dictionary:</code>
+                                <code class="language-python">    print(item) </code>
+                                <code class="language-python"></code>
+                                <code class="language-python"># salida: zamek</code>
+                                <code class="language-python">#         woda</code>
+                                <code class="language-python">#         gleba</code>
+                            </pre>
+                            <p>Si deseas examinar los elementos (claves y valores) del diccionario, puedes emplear el
+                                método items(), por ejemplo:</p>
+                            <pre class="language-python" style="text-align: left; white-space: pre-line;">
+                                <code class="language-python">pol_esp_dictionary = {</code>
+                                <code class="language-python">    "zamek" : "castillo",</code>
+                                <code class="language-python">    "woda"  : "agua",</code>
+                                <code class="language-python">    "gleba" : "tierra"</code>
+                                <code class="language-python">    }</code>
+                                <code class="language-python"></code>
+                                <code class="language-python">for key, value in pol_esp_dictionary.items():</code>
+                                <code class="language-python">    print("Pol/Esp ->", key, ":", value)</code>
+                            </pre>
+                            <p>Para comprobar si una clave existe en un diccionario, se puede emplear la palabra clave
+                                reservada in:</p>
+                            <pre class="language-python" style="text-align: left; white-space: pre-line;">
+                                <code class="language-python">pol_esp_dictionary = {</code>
+                                <code class="language-python">    "zamek" : "castillo",</code>
+                                <code class="language-python">    "woda"  : "agua",</code>
+                                <code class="language-python">    "gleba" : "tierra"</code>
+                                <code class="language-python">    }</code>
+                                <code class="language-python"></code>
+                                <code class="language-python">if "zamek" in pol_esp_dictionary:</code>
+                                <code class="language-python">    print("Si")</code>
+                                <code class="language-python">else:</code>
+                                <code class="language-python">    print("No")</code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+                <nav class="mx-auto" aria-label="Page navigation">
+                    <ul class="pagination flex-wrap mb-0 justify-content-center separation">
+                        <li class="page-item"><a class="page-link" href="page-0.html">Inicio</a></li>
+                        <li class="page-item"><a class="page-link" href="page-1.html">1</a></li>
+                        <li class="page-item"><a class="page-link" href="page-2.html">2</a></li>
+                        <li class="page-item"><a class="page-link" href="page-3.html">3</a></li>
+                        <li class="page-item active"><a class="page-link" href="page-4.html">4</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"
+        integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"
+        integrity="sha512-SkmBfuA2hqjzEVpmnMt/LINrjop3GKWqsuLSSB3e7iBmYK7JuWw4ldmmxwD9mdm2IRTTi0OxSAfEGvgEi0i2Kw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
